@@ -1,0 +1,47 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eceeca;
+    min-height: 1vh;
+}
+
+#footer {
+    background-color: #aa8561;
+    margin-top: 150px;
+    padding: 20px 0;
+    color: #eceeca;
+    font-weight: 600;
+    font-size: 1.2em;
+    position: relative;
+}
+
+.myIcon {
+    font-size: 2.3em;
+    color: #eceeca;
+}
+
+.myIcon:hover {
+    color: #d0d2ad;
+}
+
+.footer-img {
+    width: 100%;
+    position: absolute;
+    bottom: 220px;
+    z-index: -2;
+}
+
+@media(max-width: 767px) {
+    .footer-img {
+        bottom: 250px;
+    }
+}
+
+@media(max-width: 426px) {
+    .footer-img {
+        bottom: 220px;
+    }
+
+    #footer {
+        font-size: 1em;
+    }
+}
