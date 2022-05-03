@@ -10,6 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #eceeca;
     min-height: 1vh;
+    padding-top: 70px;
 }
 
 #footer {
