@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'breadley_serifregular';
+    src: url('../fonts/breadley-serif/breadleyserifregular-goyvg-webfont.woff2') format('woff2'),
+         url('../fonts/breadley-serif/breadleyserifregular-goyvg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #eceeca;
@@ -28,6 +36,12 @@ body {
     position: absolute;
     bottom: 220px;
     z-index: -2;
+}
+
+.myTitle {
+    font-family: 'breadley_serifregular', 'Times New Roman', Times, serif;
+    font-size: 3.5em !important;
+    letter-spacing: 3px;
 }
 
 @media(max-width: 767px) {
