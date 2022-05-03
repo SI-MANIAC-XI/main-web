@@ -1,5 +1,8 @@
 .video{
-    background-color: rgb(170,133,97);
+    background-color: #AA8561;
     border-radius: 30px;
     padding: 15px;
+}
+iframe{
+    max-width: 100%;
 }
