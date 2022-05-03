@@ -1,6 +1,7 @@
 .myNavbar {
     background-color: #aa8561;
     font-weight: 600;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
 }
 
 .navbar-nav .nav-item .nav-link {
