@@ -13,7 +13,7 @@
         <div class="d-flex justify-content-center my-5 fs-1 myTitle" style="color: #A0583A">PRIZES</div>
         <div class="prize-container">
             <div class="row px-2 mx-5">
-              <div class="col py-5 px-5">
+              <div class="col py-5 px-3">
                 <div class="d-flex justify-content-center">
                     <img src="{{ asset('../mainweb/img/bg-coklat.jpg') }}" alt="" class="rounded-circle" width="110" height="110">
                 </div>
@@ -23,7 +23,7 @@
                     Potongan USP sebesar 100% ( Jika masuk Jurusan Teknik Informatika Program Kekhususan Multimedia ) Piala MANIAC + Sertifikat
                 </div>
               </div>
-              <div class="col py-5 px-5">
+              <div class="col py-5 px-3">
                 <div class="d-flex justify-content-center">
                     <img src="{{ asset('../mainweb/img/bg-coklat.jpg') }}" alt="" class="rounded-circle" width="110" height="110">
                 </div>
@@ -33,7 +33,7 @@
                     Potongan USP sebesar 100% ( Jika masuk Jurusan Teknik Informatika Program Kekhususan Multimedia ) Piala MANIAC + Sertifikat
                 </div>
               </div>
-              <div class="col py-5 px-5">
+              <div class="col py-5 px-3">
                 <div class="d-flex justify-content-center">
                     <img src="{{ asset('../mainweb/img/bg-coklat.jpg') }}" alt="" class="rounded-circle" width="110" height="110">
                 </div>
@@ -47,11 +47,11 @@
         </div>
 
         <div class="container">
-            <div class="d-flex justify-content-center my-5 fs-1 myTitle" style="color: #A0583A">JOIN US NOW</div>
+            <div class="d-flex justify-content-center my-5 fs-1 myTitle text-center" style="color: #A0583A">JOIN US NOW</div>
             <div class="d-flex justify-content-center">
                 <div class="video">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="500" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1" class="embed-responsive-item">
+                        <iframe width="500" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1" allowfullscreen class="embed-responsive-item">
                         </iframe>
                     </div>
                 </div>

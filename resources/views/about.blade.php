@@ -15,7 +15,7 @@
             <div class="d-flex justify-content-center">
                 <div class="video">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="500" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1" class="embed-responsive-item">
+                        <iframe width="500" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1" allowfullscreen class="embed-responsive-item">
                         </iframe>
                     </div>
                 </div>
