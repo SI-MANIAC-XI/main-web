@@ -50,8 +50,10 @@
             <div class="d-flex justify-content-center my-5 fs-1 myTitle" style="color: #A0583A">JOIN US NOW</div>
             <div class="d-flex justify-content-center">
                 <div class="video">
-                    <iframe width="500" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
-                    </iframe>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="500" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1" class="embed-responsive-item">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
