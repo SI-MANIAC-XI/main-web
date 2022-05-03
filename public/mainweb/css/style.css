@@ -43,6 +43,7 @@ body {
     font-family: 'breadley_serifregular', 'Times New Roman', Times, serif;
     font-size: 3.5em !important;
     letter-spacing: 3px;
+    line-height: 60px;
 }
 
 @media(max-width: 767px) {
