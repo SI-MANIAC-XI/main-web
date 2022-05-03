@@ -10,8 +10,8 @@
 
 @section('content')
     <div class="container mt-5">
-        <div class="container">
-            <div class="d-flex justify-content-center my-5 fs-1 myTitle" style="color: #A0583A">PRIZES</div>
+        <div class="d-flex justify-content-center my-5 fs-1 myTitle" style="color: #A0583A">PRIZES</div>
+        <div class="prize-container">
             <div class="row px-2 mx-5">
               <div class="col py-5 px-5">
                 <div class="d-flex justify-content-center">
