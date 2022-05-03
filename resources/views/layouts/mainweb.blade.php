@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ asset('../mainweb/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('../mainweb/css/navbar.css') }}">
 
+    <link href="{{ asset('../mainweb/img/logo/logo.ico') }}" rel="shorcut icon">
     @yield('style')
 
     <title>
