@@ -166,18 +166,18 @@
 
 					</div>
 
-					
+				
 
 				</div>
+				<div class="col-lg-7 col-md-7 col-15 d-flex">
 
+					<a href="mainweb/images/foto/poster.jpg" target="blank"><img style="width:100%; height:100%; object-fit: contain;" src="{{asset('mainweb/images/foto/poster.jpg')}}" alt="poster"></a>
+	
+				</div>
 			</div>
 
-			<div class="col-lg-6 col-md-6 col-12 d-flex">
-
-				<a href="mainweb/images/foto/poster.jpg" target="blank"><img style="width:100%; height:100%; object-fit: contain;" src="{{asset('mainweb/images/foto/poster.jpg')}}" alt="poster"></a>
-
-			</div>
-
+			
+		
 
 
 		</div>
