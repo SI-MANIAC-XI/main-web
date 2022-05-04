@@ -26,6 +26,7 @@ body {
 .myIcon {
     font-size: 2.3em;
     color: #eceeca;
+    margin: 0 10px;
 }
 
 .myIcon:hover {
