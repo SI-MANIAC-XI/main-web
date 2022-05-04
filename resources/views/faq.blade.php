@@ -14,7 +14,7 @@
     <div class="accordion" id="accordionPanelsStayOpenExample">
     <div class="accordion-item faq-radialGradient">
         <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button color-title-faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="accordion-button collapsed color-title-faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             Question 1
         </button>
         </h2>
