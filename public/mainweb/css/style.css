@@ -44,6 +44,7 @@ body {
     font-size: 3.5em !important;
     letter-spacing: 3px;
     line-height: 60px;
+    color: #A0583A;
 }
 
 @media(max-width: 767px) {
