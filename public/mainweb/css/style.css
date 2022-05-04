@@ -46,6 +46,7 @@ body {
     letter-spacing: 3px;
     line-height: 60px;
     color: #A0583A;
+    text-align: center;
 }
 
 @media(max-width: 767px) {
