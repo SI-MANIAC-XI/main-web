@@ -12,3 +12,43 @@ iframe{
     max-width: 100%;
 }
 
+.caption{
+    font-family: 'breadley_serifregular', 'Times New Roman', Times, serif;
+    font-size: 2em !important;
+    letter-spacing: 6px;
+    line-height: 40px;
+    color: #ECEECA;
+   
+}
+
+.caption-container{
+    border-radius: 100px;
+    background-color:#AA8561;
+    width: 30em;
+
+}
+.hadiah{
+    color: #A0583A;
+    font-weight: bold;
+    font-size: 4em !important;
+}
+
+.custom-btn {
+    border-radius: 100px;
+    background-color:#AA8561;
+    width: 10em;
+    font-weight: bold;
+  }
+  
+  .custom-btn.custom-btn-bg {
+    background:  #A0583A;
+    color:#ECEECA !important;
+  }
+  .custom-btn.custom-btn-bg:hover {
+    background: #AA8561;
+    color: #FAE14D !important;
+  }
+  .custom-btn-group {
+    text-align: center;
+  }
+  

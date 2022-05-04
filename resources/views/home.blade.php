@@ -10,6 +10,20 @@
 @endsection
 
 @section('content')
+<div class="row">
+	<div class="about-text">
+	<div class="col-lg-10 mx-auto" id="header-text "style="text-align: center;">
+		<img src="{{ asset('../mainweb/img/logo/logo-maniac-xi.png') }}" alt="" width="75%"  >
+		<div class="caption-container">
+		<div class="d-flex justify-content-center my-5 fs-1 mb-4 caption" >Race for the Throne</div>
+	</div>
+	</div>
+</div>
+<div class="d-flex justify-content-center my-5 fs-1 mb-4 hadiah " >WIN UP TO <br>IDR 9 MILLION </div>
+
+<div class="btn custom-btn custom-btn-bg custom-btn-link mt-5 d-flex justify-content-center ">REGISTER NOW</div>
+
+
 
 <section class="resume pt-5 d-lg-flex justify-content-center align-items-center" id="resume">
 	<div class="container container-timeline">
