@@ -38,7 +38,7 @@
                 <div class="col-12">Developed by MANIAC XI Comitee</div>
                 <div class="col-12 mt-3">Social Media</div>
                 <div class="col-12 mt-2">
-                    <a href="https://www.instagram.com/maniac_ubaya/" target="_blank" class="myIcon"><i class="bi bi-instagram"></i></a> &nbsp; &nbsp;
+                    <a href="https://www.instagram.com/maniac_ubaya/" target="_blank" class="myIcon"><i class="bi bi-instagram"></i></a>
                     <a href="https://www.youtube.com/channel/UCUVYlb7cc67RC17tNngSeug" target="_blank" class="myIcon"><i class="bi bi-youtube"></a></i>
                 </div>
                 <div class="col-12 mt-3">Lapor bug & kendala web hubungi si.maniac10@gmail.com</div>
