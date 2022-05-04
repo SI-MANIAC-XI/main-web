@@ -1,0 +1,33 @@
+.compe-container{
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+    color:#ECEECA;
+}
+
+.card-title{
+    padding: 1em;
+    background-color: #AA8561;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body{
+    padding: 1.5em;
+    background-color: #A0583A;
+    border-radius: 0 0 15px 15px;
+}
+
+.btn-download{
+    padding: 0.2em 1em;
+    background-color: #A0583A;
+    color:#ECEECA;
+}
+
+.btn-download:hover{
+    background-color: #7F462E;
+    color:#ECEECA;
+}
+
+.btn-download:focus{
+    box-shadow: none;
+}
