@@ -11,14 +11,14 @@
 @section('content')
     <h2 class="d-flex justify-content-center my-5 fs-1 mb-4 myTitle text-align-center padding-title">FREQUENTLY ASKED QUESTIONS</h2>
     <div class="container mt-5">
-    <div class="accordion" id="accordionExample">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
     <div class="accordion-item faq-radialGradient">
         <h2 class="accordion-header" id="headingOne">
         <button class="accordion-button color-title-faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             Question 1
         </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
         <div class="accordion-body color-inside-faq">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo tempore, voluptatum illo deserunt, sit expedita nam ad eveniet dolorum quis, in aperiam esse animi consequuntur perspiciatis libero ea doloremque accusantium.
         </div>
