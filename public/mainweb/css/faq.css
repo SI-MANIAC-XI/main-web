@@ -5,11 +5,22 @@
     background-color: #A0583A;
     border: 0px;
     color: #ECEECA;
+    font-size: 28px;
 }
 .color-inside-faq{
     background-color: #AA8561;
     color: #ECEECA;
 }
+.padding{
+    padding: 0% 0% 20px 0%;
+}
 iframe{
     max-width: 100%;
+}
+.faq-radialGradient{
+    background:
+    radial-gradient(farthest-side at bottom right,transparent 98%,yellow 100%) top left,
+    radial-gradient(farthest-side at bottom left ,transparent 98%,yellow 100%) top right,
+    radial-gradient(farthest-side at top    left ,transparent 98%,yellow 100%) bottom right,
+    radial-gradient(farthest-side at top    right,transparent 98%,yellow 100%) bottom left;
 }

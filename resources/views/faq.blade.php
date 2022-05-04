@@ -9,21 +9,22 @@
 @endsection
 
 @section('content')
-    <h2 class="d-flex justify-content-center my-5 fs-1 mb-4 myTitle text-align-center">FREQUENTLY ASKED QUESTIONS</h2>
+    <h2 class="d-flex justify-content-center my-5 fs-1 mb-4 myTitle text-align-center padding-title">FREQUENTLY ASKED QUESTIONS</h2>
     <div class="container mt-5">
     <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
+    <div class="accordion-item faq-radialGradient">
         <h2 class="accordion-header" id="headingOne">
         <button class="accordion-button color-title-faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             Question 1
         </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show color-title-faq" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
         <div class="accordion-body color-inside-faq">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo tempore, voluptatum illo deserunt, sit expedita nam ad eveniet dolorum quis, in aperiam esse animi consequuntur perspiciatis libero ea doloremque accusantium.
         </div>
         </div>
     </div>
+    <br>
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed color-title-faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -36,6 +37,7 @@
         </div>
         </div>
     </div>
+    <br>
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
         <button class="accordion-button collapsed color-title-faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -48,6 +50,7 @@
         </div>
         </div>
     </div>
+    <br>
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingFour">
         <button class="accordion-button collapsed color-title-faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -60,6 +63,7 @@
         </div>
         </div>
     </div>
+    <br>
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingFive">
         <button class="accordion-button collapsed color-title-faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -72,6 +76,7 @@
         </div>
         </div>
     </div>
+    <br>
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingFive">
         <button class="accordion-button collapsed color-title-faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
@@ -84,6 +89,7 @@
         </div>
         </div>
     </div>
+    <br>
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingSeven">
         <button class="accordion-button collapsed color-title-faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
@@ -96,6 +102,7 @@
         </div>
         </div>
     </div>
+    <br>
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingEight">
         <button class="accordion-button collapsed color-title-faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
