@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light myNavbar">
+<nav class="navbar navbar-expand-lg navbar-light myNavbar fixed-top">
     <div class="container">
       <a class="navbar-brand" href="/">
         <div class="brand-img">

@@ -1,0 +1,14 @@
+.prize-container{
+    border-radius: 50px;
+    background-color: #AA8561;
+}
+
+.video{
+    background-color: #AA8561;
+    border-radius: 25px;
+    padding: 15px;
+}
+iframe{
+    max-width: 100%;
+}
+
