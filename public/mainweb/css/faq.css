@@ -1,5 +1,15 @@
-.title{
+.text-align-center{
     text-align: center;
-    padding:  40px 50px 1px 50px;
-    
+}
+.color-title-faq{
+    background-color: #A0583A;
+    border: 0px;
+    color: #ECEECA;
+}
+.color-inside-faq{
+    background-color: #AA8561;
+    color: #ECEECA;
+}
+iframe{
+    max-width: 100%;
 }
