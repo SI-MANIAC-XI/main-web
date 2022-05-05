@@ -51,7 +51,7 @@
                     <div class="row">
                         <div class="col-12 mt-3 fs-3">Our Location</div>
                         <div class="col-12 mt-2">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.3026572731715!2d112.76588288843654!3d-7.319859838375454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fae3f29c4665%3A0x7536c23b4453a79!2sUniversity%20of%20Surabaya!5e0!3m2!1sen!2sid!4v1651761408678!5m2!1sen!2sid" width="80%" height="250"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.2775011754256!2d112.76559941456148!3d-7.322694694715246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fae13b9db541%3A0x9a3c82589fc76f35!2sInformatics%20Engineering%20UBAYA!5e0!3m2!1sen!2sid!4v1651768569242!5m2!1sen!2sid" width="80%" height="250"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
