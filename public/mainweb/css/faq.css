@@ -31,3 +31,7 @@ iframe{
     -ms-border-radius: 0rem 0rem 1rem 1rem !important ;
     -o-border-radius: 0rem 0rem 1rem 1rem !important ;
 }
+.faq-radialGradient {
+    border-radius: 1rem !important;
+    border: none;
+}

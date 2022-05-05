@@ -25,7 +25,7 @@
         </div>
     </div>
     <br>
-    <div class="accordion-item">
+    <div class="accordion-item faq-radialGradient">
         <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed color-title-faq faq-radialGradient-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             Question 2
@@ -38,7 +38,7 @@
         </div>
     </div>
     <br>
-    <div class="accordion-item">
+    <div class="accordion-item faq-radialGradient">
         <h2 class="accordion-header" id="headingThree">
         <button class="accordion-button collapsed color-title-faq faq-radialGradient-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
             Question 3
@@ -51,7 +51,7 @@
         </div>
     </div>
     <br>
-    <div class="accordion-item">
+    <div class="accordion-item faq-radialGradient">
         <h2 class="accordion-header" id="headingFour">
         <button class="accordion-button collapsed color-title-faq faq-radialGradient-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
             Question 4
@@ -64,7 +64,7 @@
         </div>
     </div>
     <br>
-    <div class="accordion-item">
+    <div class="accordion-item faq-radialGradient">
         <h2 class="accordion-header" id="headingFive">
         <button class="accordion-button collapsed color-title-faq faq-radialGradient-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
             Question 5
@@ -77,7 +77,7 @@
         </div>
     </div>
     <br>
-    <div class="accordion-item">
+    <div class="accordion-item faq-radialGradient">
         <h2 class="accordion-header" id="headingFive">
         <button class="accordion-button collapsed color-title-faq faq-radialGradient-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
             Question 6
@@ -90,7 +90,7 @@
         </div>
     </div>
     <br>
-    <div class="accordion-item">
+    <div class="accordion-item faq-radialGradient">
         <h2 class="accordion-header" id="headingSeven">
         <button class="accordion-button collapsed color-title-faq faq-radialGradient-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
             Question 7
@@ -103,7 +103,7 @@
         </div>
     </div>
     <br>
-    <div class="accordion-item">
+    <div class="accordion-item faq-radialGradient">
         <h2 class="accordion-header" id="headingEight">
         <button class="accordion-button collapsed color-title-faq faq-radialGradient-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
             Question 8
