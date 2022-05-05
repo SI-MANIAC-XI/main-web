@@ -35,13 +35,28 @@
         <img src="{{ asset('../mainweb/img/ornament/footer-img.png') }}" alt="Footer Image" class="footer-img">
         <div class="container">
             <div class="row text-center">
-                <div class="col-12">Developed by MANIAC XI Comitee</div>
-                <div class="col-12 mt-3">Social Media</div>
-                <div class="col-12 mt-2">
-                    <a href="https://www.instagram.com/maniac_ubaya/" target="_blank" class="myIcon"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCUVYlb7cc67RC17tNngSeug" target="_blank" class="myIcon"><i class="bi bi-youtube"></a></i>
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
+                    <div class="row">
+                        <div class="col-12 mt-3 fs-3">Social Media</div>
+                        <div class="col-12">
+                            <a href="https://www.instagram.com/maniac_ubaya/" target="_blank" class="myIcon"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCUVYlb7cc67RC17tNngSeug" target="_blank" class="myIcon"><i class="bi bi-youtube"></a></i>
+                        </div>
+                        <div class="col-12 mt-4 fs-3">Contact Person</div>
+                        <div class="col-12">Meliyana : <a href="https://wa.me/082255940933" class="wa-num" target="_blank">082255940933</a></div>
+                        <div class="col-12">Alfian Dwi : <a href="https://wa.me/087855956975" class="wa-num" target="_blank">087855956975</a></div>
+                    </div>
                 </div>
-                <div class="col-12 mt-3">Lapor bug & kendala web hubungi si.maniac10@gmail.com</div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-12 mt-3 fs-3">Our Location</div>
+                        <div class="col-12 mt-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.3026572731715!2d112.76588288843654!3d-7.319859838375454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fae3f29c4665%3A0x7536c23b4453a79!2sUniversity%20of%20Surabaya!5e0!3m2!1sen!2sid!4v1651761408678!5m2!1sen!2sid" width="80%" height="250"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5 fs-6">Developed by MANIAC XI Comitee</div>
+                <div class="col-12 fs-6">Lapor bug & kendala web hubungi si.maniac10@gmail.com</div>
             </div>
         </div>
     </section>
