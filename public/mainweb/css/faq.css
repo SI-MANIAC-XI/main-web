@@ -11,13 +11,12 @@
     background-color: #AA8561;
     color: #ECEECA;
 }
-.padding{
-    padding: 0% 0% 20px 0%;
-}
 iframe{
     max-width: 100%;
 }
 .faq-radialGradient-title{
+    position: relative;
+    overflow: hidden;
     border-radius: 1rem 1rem 0rem 0rem !important ;
     -webkit-border-radius: 1rem 1rem 0rem 0rem !important ;
     -moz-border-radius: 1rem 1rem 0rem 0rem !important ;
@@ -25,9 +24,10 @@ iframe{
     -o-border-radius: 1rem 1rem 0rem 0rem !important ;
 }
 .faq-radialGradient-inside{
-    border-radius: 0rem 0rem 1rem 1rem  ;
-    -webkit-border-radius: 0rem 0rem 1rem 1rem  ;
-    -moz-border-radius: 0rem 0rem 1rem 1rem  ;
-    -ms-border-radius: 0rem 0rem 1rem 1rem  ;
-    -o-border-radius: 0rem 0rem 1rem 1rem  ;
+    position: relative;
+    border-radius: 0rem 0rem 1rem 1rem !important ;
+    -webkit-border-radius: 0rem 0rem 1rem 1rem !important ;
+    -moz-border-radius: 0rem 0rem 1rem 1rem !important ;
+    -ms-border-radius: 0rem 0rem 1rem 1rem !important ;
+    -o-border-radius: 0rem 0rem 1rem 1rem !important ;
 }
