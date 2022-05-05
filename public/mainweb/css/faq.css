@@ -17,10 +17,17 @@
 iframe{
     max-width: 100%;
 }
-.faq-radialGradient{
-    background:
-    radial-gradient(farthest-side at bottom right,transparent 98%,yellow 100%) top left,
-    radial-gradient(farthest-side at bottom left ,transparent 98%,yellow 100%) top right,
-    radial-gradient(farthest-side at top    left ,transparent 98%,yellow 100%) bottom right,
-    radial-gradient(farthest-side at top    right,transparent 98%,yellow 100%) bottom left;
+.faq-radialGradient-title{
+    border-radius: 1rem 1rem 0rem 0rem !important ;
+    -webkit-border-radius: 1rem 1rem 0rem 0rem !important ;
+    -moz-border-radius: 1rem 1rem 0rem 0rem !important ;
+    -ms-border-radius: 1rem 1rem 0rem 0rem !important ;
+    -o-border-radius: 1rem 1rem 0rem 0rem !important ;
+}
+.faq-radialGradient-inside{
+    border-radius: 0rem 0rem 1rem 1rem  ;
+    -webkit-border-radius: 0rem 0rem 1rem 1rem  ;
+    -moz-border-radius: 0rem 0rem 1rem 1rem  ;
+    -ms-border-radius: 0rem 0rem 1rem 1rem  ;
+    -o-border-radius: 0rem 0rem 1rem 1rem  ;
 }
