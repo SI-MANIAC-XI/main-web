@@ -35,3 +35,9 @@ iframe{
     border-radius: 1rem !important;
     border: none;
 }
+.accordion-button::after, .accordion-button:not(.collapsed)::after{
+    filter: brightness(0%) invert(100%);
+}
+.accordion-button:focus{
+    box-shadow: inherit;
+}
