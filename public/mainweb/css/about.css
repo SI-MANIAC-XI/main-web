@@ -6,3 +6,28 @@
 iframe{
     max-width: 100%;
 }
+
+.carousel-cont{
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 8rem;
+    color:#ECEECA;
+}
+
+.carousel-slider{
+    padding: 2em;
+    background-color: #AA8561;
+    border-radius: 30px 30px 0 0;
+}
+
+.carousel{
+    width: 90%;
+    margin:auto;
+}
+
+.carousel-desc{
+    padding: 2em;
+    background-color: #A0583A;
+    border-radius: 0 0 30px 30px;
+}
