@@ -23,7 +23,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="d-flex justify-content-center mt-4 hadiah text-center">WIN UP TO <br>IDR 9 MILLION </div>
-                <a href="#" class="btn custom-btn custom-btn-bg">REGISTER NOW</a>    
+                <a href="/register" class="btn custom-btn custom-btn-bg">REGISTER NOW</a>    
             </div>
         </div>
     </div>

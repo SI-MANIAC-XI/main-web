@@ -11,6 +11,7 @@ body {
     background-color: #eceeca;
     min-height: 1vh;
     padding-top: 70px;
+    color: #A0583A;
 }
 
 #footer {
@@ -57,6 +58,98 @@ body {
     color: #d0d2ad;
 }
 
+.width-100 {
+    width: 100%;
+}
+
+.myTextbox {
+    display: block;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 2px solid #A0583A;
+    color: #A0583A;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.myTextbox::placeholder {
+    color: #a68070;
+    font-weight: normal;
+}
+
+.myTextbox:focus{
+    border: inherit;
+}
+
+.myBtn {
+    background-color: #A0583A;
+    color: #eceeca;
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.myBtn:hover {
+    background-color: #7F462E;
+    color:#ECEECA;
+}
+
+.myChkbox {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.chkText {
+    display: inline-block;
+    color: #A0583A;
+    margin-bottom: 10px;
+}
+
+.have-account {
+    color: #A0583A;
+    font-weight: 600;
+}
+
+.have-account a {
+    color: #A0583A;
+}
+
+.have-account a:hover {
+    color: #7F462E;
+}
+
+.myLabel {
+    font-weight: 500;
+}
+
+.myInputFile {
+    height: 40px;
+    display: block;
+    margin-bottom: 10px;
+    border: 2px solid #A0583A;
+    border-radius: 10px;
+    padding: 6px 10px;
+}
+
+.myInputFile::-webkit-file-upload-button {
+    background-color: #A0583A;
+    color: #eceeca;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.myInputFile::-webkit-file-upload-button:hover {
+    background-color: #7F462E;
+}
+
 @media(max-width: 767px) {
     .footer-img {
         bottom: 690px;
@@ -70,5 +163,9 @@ body {
 
     #footer {
         font-size: 1em;
+    }
+
+    .myTitle {
+        font-size: 3em !important;
     }
 }
