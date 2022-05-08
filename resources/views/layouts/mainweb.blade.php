@@ -43,8 +43,8 @@
                             <a href="https://www.youtube.com/channel/UCUVYlb7cc67RC17tNngSeug" target="_blank" class="myIcon"><i class="bi bi-youtube"></a></i>
                         </div>
                         <div class="col-12 mt-4 fs-3">Contact Person</div>
-                        <div class="col-12">Meliyana : <a href="https://wa.me/082255940933" class="wa-num" target="_blank">082255940933</a></div>
-                        <div class="col-12">Alfian Dwi : <a href="https://wa.me/087855956975" class="wa-num" target="_blank">087855956975</a></div>
+                        <div class="col-12">Meliyana : <a href="https://wa.me/+6282255940933" class="wa-num" target="_blank">082255940933</a></div>
+                        <div class="col-12">Alfian Dwi : <a href="https://wa.me/+6287855956975" class="wa-num" target="_blank">087855956975</a></div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">

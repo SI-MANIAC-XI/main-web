@@ -60,6 +60,14 @@ body {
 
 .width-100 {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.width-90 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .myTextbox {
@@ -84,12 +92,14 @@ body {
 }
 
 .myBtn {
+    display: block;
     background-color: #A0583A;
     color: #eceeca;
     border-radius: 15px;
     border: none;
     height: 40px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .myBtn:hover {
@@ -125,6 +135,7 @@ body {
 
 .myLabel {
     font-weight: 500;
+    margin-left: 5%;
 }
 
 .myInputFile {
@@ -143,6 +154,7 @@ body {
     border: none;
     cursor: pointer;
     padding: 0 10px;
+    font-weight: 600;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
