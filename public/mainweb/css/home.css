@@ -1,0 +1,81 @@
+.prize-container {
+    border-radius: 50px;
+    background-color: #aa8561;
+}
+
+.video {
+    background-color: #aa8561;
+    border-radius: 25px;
+    padding: 15px;
+}
+iframe {
+    max-width: 100%;
+}
+
+.caption {
+    font-family: "breadley_serifregular", "Times New Roman", Times, serif;
+    font-size: 2em;
+    letter-spacing: 6px;
+    line-height: 40px;
+    color: #eceeca;
+}
+
+.caption-container {
+    border-radius: 100px;
+    background-color: #aa8561;
+    width: 30em;
+    margin: 20px auto;
+}
+.hadiah {
+    color: #a0583a;
+    font-weight: bold;
+    font-size: 4em;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+.custom-btn {
+    text-decoration: none;
+    display: block;
+    border-radius: 100px;
+    background-color: #aa8561;
+    width: 10em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.custom-btn.custom-btn-bg {
+    background: #a0583a;
+    color: #eceeca !important;
+}
+
+.custom-btn.custom-btn-bg:hover {
+    background: #7F462E;
+}
+
+.custom-btn-group {
+    text-align: center;
+}
+
+@media (max-width: 426px) {
+    .caption {
+        font-size: 1.5em;
+        letter-spacing: 2px;
+    }
+    .caption-container {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 376px) {
+    .hadiah {
+        font-size: 3em;
+        line-height: 50px;
+    }
+    .caption {
+        font-size: 1.2em;
+    }
+    .caption-container {
+        max-width: 70%;
+    }
+}
