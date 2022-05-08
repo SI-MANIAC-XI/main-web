@@ -25,9 +25,6 @@
           <li class="nav-item">
             <a class="nav-link{{ request()->is('faq') ? ' active' : '' }}" href="/faq">FAQ</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link{{ request()->is('contact') ? ' active' : '' }}" href="/contact">Contact</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
