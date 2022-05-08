@@ -65,6 +65,11 @@
                             <label class="myLabel">Kartu Pelajar</label>
                                 <input type="file" name="KartuPelajarAnggota2" id="KartuPelajarAnggota2" class="myInputFile width-100">
                         </div>
+
+                        <button class="btn myBtn width-100 mt-5" type="submit">Register</button>
+                        <div class="row justify-content-center">
+                            <p class="text-center have-account">Already have an account? <a href="/login">Login</a></p>
+                        </div>
                     </form>
                 </div>
             </div>
