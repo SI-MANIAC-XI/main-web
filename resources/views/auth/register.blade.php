@@ -39,7 +39,7 @@
                             <label class="myLabel">Email</label>
                                 <input type="email" name="txtEmailKetua" id="txtEmailKetua" class="myTextbox width-100" placeholder="Email">
                             <label class="myLabel">Kartu Pelajar</label>
-                                <input type="file" name="KartuPelajarKetua" id="KartuPelajarKetua" class="myInputFile width-100">
+                                <input type="file" accept="image/*" name="KartuPelajarKetua" id="KartuPelajarKetua" class="myInputFile width-100">
                         </div>
 
                         <div class="data-anggota anggota-1">
@@ -51,7 +51,7 @@
                             <label class="myLabel">Email</label>
                                 <input type="email" name="txtEmailAnggota1" id="txtEmailAnggota1" class="myTextbox width-100" placeholder="Email">
                             <label class="myLabel">Kartu Pelajar</label>
-                                <input type="file" name="KartuPelajarAnggota1" id="KartuPelajarAnggota1" class="myInputFile width-100">
+                                <input type="file" accept="image/*" name="KartuPelajarAnggota1" id="KartuPelajarAnggota1" class="myInputFile width-100">
                         </div>
 
                         <div class="data-anggota anggota-2">
@@ -63,7 +63,7 @@
                             <label class="myLabel">Email</label>
                                 <input type="email" name="txtEmailAnggota2" id="txtEmailAnggota2" class="myTextbox width-100" placeholder="Email">
                             <label class="myLabel">Kartu Pelajar</label>
-                                <input type="file" name="KartuPelajarAnggota2" id="KartuPelajarAnggota2" class="myInputFile width-100">
+                                <input type="file" accept="image/*" name="KartuPelajarAnggota2" id="KartuPelajarAnggota2" class="myInputFile width-100">
                         </div>
 
                         <button class="btn myBtn width-100 mt-5" type="submit">Register</button>
