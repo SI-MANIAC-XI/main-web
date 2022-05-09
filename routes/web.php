@@ -32,7 +32,11 @@ Route::get('faq', function () {
 Route::get('login', function () {
     return view('auth.login');
 });
+Route::post('/login','AccountController@authenticate');
+
 
 Route::get('register', function () {
     return view('auth.register');
 });
+
+Route::post('/register','RegisterController@store');
