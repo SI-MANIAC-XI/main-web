@@ -40,3 +40,12 @@ Route::get('register', function () {
 });
 
 Route::post('/register','RegisterController@store');
+
+//Auth::routes();
+
+// Route::group(['middleware' => 'auth'], function () {
+//    Route::get('')
+// });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
