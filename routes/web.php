@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,7 +33,6 @@ Route::get('login', function () {
     return view('auth.login');
 });
 Route::post('/login','AccountController@authenticate');
-
 
 Route::get('register', function () {
     return view('auth.register');
