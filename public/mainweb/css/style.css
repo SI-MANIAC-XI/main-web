@@ -28,6 +28,7 @@ body {
     font-size: 2.3em;
     color: #eceeca;
     margin: 0 10px;
+    transition: all 0.3s;
 }
 
 .myIcon:hover {
@@ -52,6 +53,7 @@ body {
 
 .wa-num {
     color: #eceeca;
+    transition: all 0.3s;
 }
 
 .wa-num:hover {
