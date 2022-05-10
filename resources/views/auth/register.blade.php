@@ -22,7 +22,7 @@
                             <label class="myLabel">Nama Sekolah</label>
                                 <input type="text" name="school_name" id="txtNamaSekolah" class="myTextbox width-90" placeholder="Nama Sekolah" required>
                             <label class="myLabel">Alamat Lengkap Sekolah</label>
-                                <textarea name="txtAlamat" id="school_address" cols="30" rows="10" class="myTextbox width-90" placeholder="cth. Jalan Raya Kalirungkut, Surabaya 60293" style="padding-top: 5px; padding-bottom: 5px; height: 80px; min-height: 40px;" required></textarea>
+                                <textarea name="school_address" id="school_address" cols="30" rows="10" class="myTextbox width-90" placeholder="cth. Jalan Raya Kalirungkut, Surabaya 60293" style="padding-top: 5px; padding-bottom: 5px; height: 80px; min-height: 40px;" required></textarea>
                             <label class="myLabel">Username</label>
                                 <input type="text" name="username" id="txtUsername" class="myTextbox width-90" placeholder="Username" required>
                             <label class="myLabel">Password</label>

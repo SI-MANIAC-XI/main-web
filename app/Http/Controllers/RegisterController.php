@@ -12,7 +12,6 @@ class RegisterController extends Controller
 {
     public function store(Request $request)
     {
-        dd($request);
         $dataAccount = new Account();
         $dataAccount->username = $request->get('username');
         $dataAccount->password = Hash::make($request->get('password'));
@@ -36,7 +35,12 @@ class RegisterController extends Controller
         $dataMember1->role = "Leader";
         $dataMember1->phone_number = $request->get('phone_number');
         $dataMember1->email = $request->get('email');
-        $dataMember1->image = "image";
+        
+        //Image
+        $imgFolder = "images";
+        $imgFile = time()."_".$request->file('image')->getClientOriginalName();
+        $request->file('image')->move($imgFolder, $imgFile);
+        $dataMember1->image = $imgFile;
 
         $dataMember1->save();
         
@@ -46,7 +50,12 @@ class RegisterController extends Controller
         $dataMember2->role = "Member";
         $dataMember2->phone_number = $request->get('phone_number1');
         $dataMember2->email = $request->get('email1');
-        $dataMember2->image = "image";
+        
+        //Image
+        $imgFolder = "images";
+        $imgFile = time()."_".$request->file('image1')->getClientOriginalName();
+        $request->file('image1')->move($imgFolder, $imgFile);
+        $dataMember2->image = $imgFile;
 
         $dataMember2->save();
 
@@ -56,7 +65,12 @@ class RegisterController extends Controller
         $dataMember3->role = "Member";
         $dataMember3->phone_number = $request->get('phone_number2');
         $dataMember3->email = $request->get('email2');
-        $dataMember3->image = "image";
+        
+        //Image
+        $imgFolder = "images";
+        $imgFile = time()."_".$request->file('image2')->getClientOriginalName();
+        $request->file('image2')->move($imgFolder, $imgFile);
+        $dataMember3->image = $imgFile;
 
         $dataMember3->save();
 

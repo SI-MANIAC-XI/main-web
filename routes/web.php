@@ -45,6 +45,6 @@ Route::post('/register','RegisterController@store');
 // Route::group(['middleware' => 'auth'], function () {
 //    Route::get('')
 // });
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
