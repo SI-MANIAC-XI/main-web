@@ -12,8 +12,8 @@
                     <img src="{{ asset('../mainweb/img/logo/logo-maniac-xi.png') }}" width="90%" alt="Logo MANIAC XI">
                     <form method="POST" action="{{ url("/login") }}" class="mt-5">
                         @csrf
-                        <input type="text" name="username" id="txtUsername" class="myTextbox width-90" placeholder="Username">
-                        <input type="password" name="password" id="txtPassword" class="myTextbox width-90" placeholder="Password">
+                        <input type="text" name="username" id="txtUsername" class="myTextbox width-90" placeholder="Username" required>
+                        <input type="password" name="password" id="txtPassword" class="myTextbox width-90" placeholder="Password" required>
                         <div class="d-flex align-items-center" style="margin-left: 5%">
                             <input type="checkbox" class="myChkbox mx-2" onclick="showPassword()"> 
                             <span class="chkText">Show Password</span>
