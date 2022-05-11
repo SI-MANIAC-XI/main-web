@@ -18,18 +18,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
-  <meta name="author" content="Creative Tim">
-  <title>Argon Dashboard PRO - Premium Bootstrap 4 Admin Template</title>
+  <meta name="author" content="SI Maniac Development">
+  <title>MANIAC XI ADMIN | @yield('title') </title>
   <!-- Favicon -->
-  <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
+  <link href="{{ asset('../mainweb/img/logo/logo.ico') }}" rel="shorcut icon">
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
-  <link rel="stylesheet" href="../../assets/vendor/nucleo/css/nucleo.css" type="text/css">
-  <link rel="stylesheet" href="../../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="{{ asset('mainweb/admin/assets/vendor/nucleo/css/nucleo.css') }}" type="text/css">
+  <link rel="stylesheet" href="{{ asset('mainweb/admin/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" type="text/css">
   <!-- Page plugins -->
   <!-- Argon CSS -->
-  <link rel="stylesheet" href="../../assets/css/argon.css?v=1.1.0" type="text/css">
+  <link rel="stylesheet" href="{{ asset('mainweb/admin/assets/css/argon.css?v=1.1.0') }}" type="text/css">
+
+  <!-- Custom CSS -->
+   @yield('customcss')
+  <!-- Custom Javascript -->
+   @yield('javascript')
 </head>
 
 <body>
@@ -38,8 +43,8 @@
     <div class="scrollbar-inner">
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
-        <a class="navbar-brand" href="../../pages/dashboards/dashboard.html">
-          <img src="../../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+        <a class="navbar-brand" href="{{ url('/dashboardadmin') }}">
+          <img src="{{ asset('mainweb/img/logo/logo-maniac-xi.png') }}" class="navbar-brand-img" alt="...">
         </a>
         <div class="ml-auto">
           <!-- Sidenav toggler -->
@@ -59,16 +64,26 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" href="#navbar-dashboards" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-dashboards">
-                <i class="ni ni-shop text-primary"></i>
-                <span class="nav-link-text">Dashboards</span>
+                <i class="ni ni-single-02 text-primary"></i>
+                <span class="nav-link-text">All Team</span>
               </a>
               <div class="collapse show" id="navbar-dashboards">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="../../pages/dashboards/dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="{{ url('/verifikasiteam') }}" class="nav-link">Validasi Registrasi</a>
                   </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
+                <i class="ni ni-money-coins text-orange"></i>
+                <span class="nav-link-text">Processing Data</span>
+              </a>
+              <div class="collapse" id="navbar-examples">
+                <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="../../pages/dashboards/alternative.html" class="nav-link active">Alternative</a>
+                    <a href="#!CRUDsekolah" class="nav-link">Data Sekolah</a>
                   </li>
                 </ul>
               </div>
@@ -76,177 +91,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                 <i class="ni ni-ungroup text-orange"></i>
-                <span class="nav-link-text">Examples</span>
+                <span class="nav-link-text">Admin</span>
               </a>
               <div class="collapse" id="navbar-examples">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="../../pages/examples/pricing.html" class="nav-link">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/login.html" class="nav-link">Login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/register.html" class="nav-link">Register</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/lock.html" class="nav-link">Lock</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/timeline.html" class="nav-link">Timeline</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/profile.html" class="nav-link">Profile</a>
+                    <a href="#!CRUDsekolah" class="nav-link">Profile Admin</a>
                   </li>
                 </ul>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#navbar-components" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-components">
-                <i class="ni ni-ui-04 text-info"></i>
-                <span class="nav-link-text">Components</span>
-              </a>
-              <div class="collapse" id="navbar-components">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="../../pages/components/buttons.html" class="nav-link">Buttons</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/components/cards.html" class="nav-link">Cards</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/components/grid.html" class="nav-link">Grid</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/components/notifications.html" class="nav-link">Notifications</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/components/icons.html" class="nav-link">Icons</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/components/typography.html" class="nav-link">Typography</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#navbar-multilevel" class="nav-link" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-multilevel">Multi level</a>
-                    <div class="collapse show" id="navbar-multilevel" style="">
-                      <ul class="nav nav-sm flex-column">
-                        <li class="nav-item">
-                          <a href="#!" class="nav-link ">Third level menu</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#!" class="nav-link ">Just another link</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#!" class="nav-link ">One last link</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#navbar-forms" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-forms">
-                <i class="ni ni-single-copy-04 text-pink"></i>
-                <span class="nav-link-text">Forms</span>
-              </a>
-              <div class="collapse" id="navbar-forms">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="../../pages/forms/elements.html" class="nav-link">Elements</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/forms/components.html" class="nav-link">Components</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/forms/validation.html" class="nav-link">Validation</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#navbar-tables" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
-                <i class="ni ni-align-left-2 text-default"></i>
-                <span class="nav-link-text">Tables</span>
-              </a>
-              <div class="collapse" id="navbar-tables">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="../../pages/tables/tables.html" class="nav-link">Tables</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/tables/sortable.html" class="nav-link">Sortable</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/tables/datatables.html" class="nav-link">Datatables</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#navbar-maps" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-maps">
-                <i class="ni ni-map-big text-primary"></i>
-                <span class="nav-link-text">Maps</span>
-              </a>
-              <div class="collapse" id="navbar-maps">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="../../pages/maps/google.html" class="nav-link">Google</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/maps/vector.html" class="nav-link">Vector</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../pages/widgets.html">
-                <i class="ni ni-archive-2 text-green"></i>
-                <span class="nav-link-text">Widgets</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../pages/charts.html">
-                <i class="ni ni-chart-pie-35 text-info"></i>
-                <span class="nav-link-text">Charts</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../pages/calendar.html">
-                <i class="ni ni-calendar-grid-58 text-red"></i>
-                <span class="nav-link-text">Calendar</span>
-              </a>
-            </li>
-          </ul>
-          <!-- Divider -->
-          <hr class="my-3">
-          <!-- Heading -->
-          <h6 class="navbar-heading p-0 text-muted">Documentation</h6>
-          <!-- Navigation -->
-          <ul class="navbar-nav mb-md-3">
-            <li class="nav-item">
-              <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html" target="_blank">
-                <i class="ni ni-spaceship"></i>
-                <span class="nav-link-text">Getting started</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/foundation/colors.html" target="_blank">
-                <i class="ni ni-palette"></i>
-                <span class="nav-link-text">Foundation</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/components/alerts.html" target="_blank">
-                <i class="ni ni-ui-04"></i>
-                <span class="nav-link-text">Components</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/plugins/charts.html" target="_blank">
-                <i class="ni ni-chart-pie-35"></i>
-                <span class="nav-link-text">Plugins</span>
-              </a>
             </li>
           </ul>
         </div>
@@ -297,7 +150,7 @@
               <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right py-0 overflow-hidden">
                 <!-- Dropdown header -->
                 <div class="px-3 py-3">
-                  <h6 class="text-sm text-muted m-0">You have <strong class="text-primary">13</strong> notifications.</h6>
+                  <h6 class="text-sm text-muted m-0">You have <strong class="text-primary">1</strong> notifications.</h6>
                 </div>
                 <!-- List group -->
                 <div class="list-group list-group-flush">
@@ -305,7 +158,7 @@
                     <div class="row align-items-center">
                       <div class="col-auto">
                         <!-- Avatar -->
-                        <img alt="Image placeholder" src="../../assets/img/theme/team-1.jpg" class="avatar rounded-circle">
+                        <img alt="Image placeholder" src="{{ asset('mainweb/admin/assets/img/theme/team-1.jpg') }}" class="avatar rounded-circle">
                       </div>
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
@@ -317,88 +170,10 @@
                           </div>
                         </div>
                         <p class="text-sm mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#!" class="list-group-item list-group-item-action">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        <!-- Avatar -->
-                        <img alt="Image placeholder" src="../../assets/img/theme/team-2.jpg" class="avatar rounded-circle">
-                      </div>
-                      <div class="col ml--2">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
-                          </div>
-                          <div class="text-right text-muted">
-                            <small>3 hrs ago</small>
-                          </div>
-                        </div>
-                        <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#!" class="list-group-item list-group-item-action">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        <!-- Avatar -->
-                        <img alt="Image placeholder" src="../../assets/img/theme/team-3.jpg" class="avatar rounded-circle">
-                      </div>
-                      <div class="col ml--2">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
-                          </div>
-                          <div class="text-right text-muted">
-                            <small>5 hrs ago</small>
-                          </div>
-                        </div>
-                        <p class="text-sm mb-0">Your posts have been liked a lot.</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#!" class="list-group-item list-group-item-action">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        <!-- Avatar -->
-                        <img alt="Image placeholder" src="../../assets/img/theme/team-4.jpg" class="avatar rounded-circle">
-                      </div>
-                      <div class="col ml--2">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
-                          </div>
-                          <div class="text-right text-muted">
-                            <small>2 hrs ago</small>
-                          </div>
-                        </div>
-                        <p class="text-sm mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#!" class="list-group-item list-group-item-action">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        <!-- Avatar -->
-                        <img alt="Image placeholder" src="../../assets/img/theme/team-5.jpg" class="avatar rounded-circle">
-                      </div>
-                      <div class="col ml--2">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
-                          </div>
-                          <div class="text-right text-muted">
-                            <small>3 hrs ago</small>
-                          </div>
-                        </div>
-                        <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
                       </div>
                     </div>
                   </a>
                 </div>
-                <!-- View all -->
-                <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -419,30 +194,6 @@
                     </span>
                     <small>Email</small>
                   </a>
-                  <a href="#!" class="col-4 shortcut-item">
-                    <span class="shortcut-media avatar rounded-circle bg-gradient-info">
-                      <i class="ni ni-credit-card"></i>
-                    </span>
-                    <small>Payments</small>
-                  </a>
-                  <a href="#!" class="col-4 shortcut-item">
-                    <span class="shortcut-media avatar rounded-circle bg-gradient-green">
-                      <i class="ni ni-books"></i>
-                    </span>
-                    <small>Reports</small>
-                  </a>
-                  <a href="#!" class="col-4 shortcut-item">
-                    <span class="shortcut-media avatar rounded-circle bg-gradient-purple">
-                      <i class="ni ni-pin-3"></i>
-                    </span>
-                    <small>Maps</small>
-                  </a>
-                  <a href="#!" class="col-4 shortcut-item">
-                    <span class="shortcut-media avatar rounded-circle bg-gradient-yellow">
-                      <i class="ni ni-basket"></i>
-                    </span>
-                    <small>Shop</small>
-                  </a>
                 </div>
               </div>
             </li>
@@ -452,7 +203,7 @@
               <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="media align-items-center">
                   <span class="avatar avatar-sm rounded-circle">
-                    <img alt="Image placeholder" src="../../assets/img/theme/team-4.jpg">
+                    <img alt="Image placeholder" src="{{ asset('mainweb/admin/assets/img/theme/team-4.jpg') }}">
                   </span>
                   <div class="media-body ml-2 d-none d-lg-block">
                     <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
@@ -467,18 +218,6 @@
                   <i class="ni ni-single-02"></i>
                   <span>My profile</span>
                 </a>
-                <a href="#!" class="dropdown-item">
-                  <i class="ni ni-settings-gear-65"></i>
-                  <span>Settings</span>
-                </a>
-                <a href="#!" class="dropdown-item">
-                  <i class="ni ni-calendar-grid-58"></i>
-                  <span>Activity</span>
-                </a>
-                <a href="#!" class="dropdown-item">
-                  <i class="ni ni-support-16"></i>
-                  <span>Support</span>
-                </a>
                 <div class="dropdown-divider"></div>
                 <a href="#!" class="dropdown-item">
                   <i class="ni ni-user-run"></i>
@@ -492,49 +231,32 @@
     </nav>
     <!-- Header -->
     <!-- Header -->
-    <div class="header pb-6">
+    <section class="header pb-6">
       <div class="container-fluid">
-        <div class="header-body">
-          <div class="row align-items-center py-4">
-            <div class="col-lg-6 col-7">
-              <h6 class="h2 d-inline-block mb-0">Alternative</h6>
-              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
-                <ol class="breadcrumb breadcrumb-links">
-                  <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Alternative</li>
-                </ol>
-              </nav>
-            </div>
-            <div class="col-lg-6 col-5 text-right">
-              <a href="#" class="btn btn-sm btn-neutral">New</a>
-              <a href="#" class="btn btn-sm btn-neutral">Filters</a>
-            </div>
-          </div>
-        </div>
+        @yield('header')
       </div>
-    </div>
+    </section>
     <!-- Page content -->
-    <div class="container-fluid mt--6">
+    <section class="container-fluid mt--6">
        @yield('content')
-    </div>
+    </section>
   </div>
   <!-- Argon Scripts -->
   <!-- Core -->
-  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../../assets/vendor/js-cookie/js.cookie.js"></script>
-  <script src="../../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-  <script src="../../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <script src="{{ asset('mainweb/admin/assets/vendor/jquery/dist/jquery.min.js') }}"></script>
+  <script src="{{ asset('mainweb/admin/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('mainweb/admin/assets/vendor/js-cookie/js.cookie.js') }}"></script>
+  <script src="{{ asset('mainweb/admin/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
+  <script src="{{ asset('mainweb/admin/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
   <!-- Optional JS -->
-  <script src="../../assets/vendor/chart.js/dist/Chart.min.js"></script>
-  <script src="../../assets/vendor/chart.js/dist/Chart.extension.js"></script>
-  <script src="../../assets/vendor/jvectormap-next/jquery-jvectormap.min.js"></script>
-  <script src="../../assets/js/vendor/jvectormap/jquery-jvectormap-world-mill.js"></script>
+  <script src="{{ asset('mainweb/admin/assets/vendor/chart.js/dist/Chart.min.js') }}"></script>
+  <script src="{{ asset('mainweb/admin/assets/vendor/chart.js/dist/Chart.extension.js') }}"></script>
+  <script src="{{ asset('mainweb/admin/assets/vendor/jvectormap-next/jquery-jvectormap.min.js') }}"></script>
+  <script src="{{ asset('mainweb/admin/assets/js/vendor/jvectormap/jquery-jvectormap-world-mill.js') }}"></script>
   <!-- Argon JS -->
-  <script src="../../assets/js/argon.js?v=1.1.0"></script>
+  <script src="{{ asset('mainweb/admin/assets/js/argon.js?v=1.1.0') }}"></script>
   <!-- Demo JS - remove this in your project -->
-  <script src="../../assets/js/demo.min.js"></script>
+  <script src="{{ asset('mainweb/admin/assets/js/demo.min.js') }}"></script>
 </body>
 
 </html>

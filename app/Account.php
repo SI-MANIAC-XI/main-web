@@ -14,9 +14,9 @@ class Account extends Authenticatable
    protected $hidden = [
       'password',
    ];
-
+   // Relasi 1-1
    public function team()
    {
-      return $this->hasMany('App\Team', 'account_id', 'id');
+      return $this->hasOne('App\Team', 'account_id', 'id');
    }
 }

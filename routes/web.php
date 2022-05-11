@@ -41,7 +41,8 @@ Route::get('register', function () {
 Route::post('/register','RegisterController@store');
 
 //Auth::routes();
-
+Route::get('/dashboardadmin', function() { return view('admin.adminwelcome'); });
+Route::resource('/verifikasiteam','TeamController');
 // Route::group(['middleware' => 'auth'], function () {
 //    Route::get('')
 // });
