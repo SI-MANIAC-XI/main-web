@@ -30,7 +30,7 @@
             <!-- Light table -->
             <div class="table-responsive">
                <table class="table table-hover table-striped align-items-center table-flush">
-                  <thead class="thead-dark">
+                  <thead class="thead-light">
                      <tr>
                         <th scope="col" class="sort" data-sort="id">ID</th>
                         <th scope="col" class="sort" data-sort="team_name">Nama Team</th>
@@ -54,16 +54,48 @@
                               @endforeach
                            </td>
                            <td>{{ $data->school_name }}</td>
-                           <td class="text-right">
-                              <div class="dropdown">
-                                 <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-ellipsis-v"></i>
-                                 </a>
-                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                    <a class="dropdown-item" href="#">Show Details</a>
-                                    <a class="dropdown-item" href="#">Validasi</a>
+                           <td>
+
+                              <a href="#team_{{ $data->id }}" class="btn btn-google-plus" data-toggle="modal">Show Detail Verifikasi</a>
+
+                                 <!-- Modal -->
+                                 <div class="modal fade" id="team_{{ $data->id }}" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl" role="document">
+                                       <div class="modal-content">
+                                          <div class="modal-header">
+                                             <h5 class="modal-title">Validasi Team Peserta</h5>
+                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                             </button>
+                                          </div>
+                                          <div class="modal-body">
+                                             <div class="row">
+                                                @foreach ($data->teamDetail as $peserta)
+                                                   <div class="col-md-4">
+                                                      <div class="card">
+                                                         <!-- Card image -->
+                                                         <img class="card-img-top" src="{{ asset('images/'.$peserta->images) }}" alt="Image placeholder">
+                                                         <!-- Card body -->
+                                                         <div class="card-body">
+                                                            <h5 class="h2 card-title mb-0">{{ $peserta->role }} : {{ $peserta->name }}</h5>
+                                                            <p class="card-text mt-4">Email : {{ $peserta->email }}</p>
+                                                            <p class="card-text mt-4">Phone Number : {{ $peserta->phone_number }}</p>
+
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                @endforeach
+                                             </div>
+                                          </div>
+                                          <div class="modal-footer">
+                                             <a href="#!" class="btn btn-facebook my-2">Verifikasi Data</a>
+                                             <a href="#!" class="btn btn-pinterest my-2">Tolak Verifikasi</a>
+                                             <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                                          </div>
+                                       </div>
+                                    </div>
                                  </div>
-                              </div>
+                                 <!-- End Modal -->
                            </td>
                         </tr> 
                      @endforeach              
@@ -100,4 +132,11 @@
          <!-- END card -->
       </div>
    </div>
+
+
+@endsection
+@section('javascript')
+   <script>
+
+   </script>
 @endsection
