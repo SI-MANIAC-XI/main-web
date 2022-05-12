@@ -88,8 +88,8 @@
                                              </div>
                                           </div>
                                           <div class="modal-footer">
-                                             <a href="#!" class="btn btn-facebook my-2">Verifikasi Data</a>
-                                             <a href="#!" class="btn btn-pinterest my-2">Tolak Verifikasi</a>
+                                             <a href="#!" class="btn btn-facebook my-2" data-toggle="sweet-alert" data-sweet-alert="success">Verifikasi Data</a>
+                                             <a href="#!" class="btn btn-pinterest my-2" data-toggle="notify" data-placement="top" data-align="center" data-type="danger" data-icon="ni ni-bell-55">Tolak Verifikasi</a>
                                              <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
                                           </div>
                                        </div>

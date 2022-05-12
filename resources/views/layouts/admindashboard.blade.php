@@ -253,6 +253,8 @@
   <script src="{{ asset('mainweb/admin/assets/vendor/chart.js/dist/Chart.extension.js') }}"></script>
   <script src="{{ asset('mainweb/admin/assets/vendor/jvectormap-next/jquery-jvectormap.min.js') }}"></script>
   <script src="{{ asset('mainweb/admin/assets/js/vendor/jvectormap/jquery-jvectormap-world-mill.js') }}"></script>
+  <script src="{{ asset('mainweb/admin/assets/vendor/sweetalert2/dist/sweetalert2.all.min.js') }}"></script>
+  <script src="{{ asset('mainweb/admin/assets/vendor/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
   <!-- Argon JS -->
   <script src="{{ asset('mainweb/admin/assets/js/argon.js?v=1.1.0') }}"></script>
   <!-- Demo JS - remove this in your project -->
