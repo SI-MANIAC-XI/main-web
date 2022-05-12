@@ -74,7 +74,7 @@
                                                    <div class="col-md-4">
                                                       <div class="card">
                                                          <!-- Card image -->
-                                                         <img class="card-img-top" src="{{ asset('images/'.$peserta->images) }}" alt="Image placeholder">
+                                                         <img class="card-img-top" src="{{ asset('images/'.$peserta->image) }}" alt="Image placeholder">
                                                          <!-- Card body -->
                                                          <div class="card-body">
                                                             <h5 class="h2 card-title mb-0">{{ $peserta->role }} : {{ $peserta->name }}</h5>
