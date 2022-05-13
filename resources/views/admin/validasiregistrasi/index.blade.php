@@ -27,6 +27,11 @@
             <div class="card-header border-0">
                <h2 class="mb-0">Verifikasi Team</h2>
             </div>
+            @if ( session('status'))
+            <div class="alert alert-success">
+               {{ session('status') }}
+            </div>
+            @endif
             <!-- Light table -->
             <div class="table-responsive">
                <table class="table table-hover table-striped align-items-center table-flush">
@@ -78,7 +83,7 @@
                                                          <!-- Card body -->
                                                          <div class="card-body">
                                                             <h5 class="h2 card-title mb-0">{{ $peserta->role }} : {{ $peserta->name }}</h5>
-                                                            <p class="card-text mt-4">Email : {{ $peserta->email }}</p>
+                                                            <p id="emailTxt" class="card-text mt-4">Email : {{ $peserta->email }}</p>
                                                             <p class="card-text mt-4">Phone Number : {{ $peserta->phone_number }}</p>
 
                                                          </div>
@@ -88,8 +93,18 @@
                                              </div>
                                           </div>
                                           <div class="modal-footer">
-                                             <a href="#!" class="btn btn-facebook my-2" data-toggle="sweet-alert" data-sweet-alert="success">Verifikasi Data</a>
-                                             <a href="#!" class="btn btn-pinterest my-2" data-toggle="notify" data-placement="top" data-align="center" data-type="danger" data-icon="ni ni-bell-55">Tolak Verifikasi</a>
+                                             <form method="POST" action="{{ url('/dashboardadmin/confirm/'.$data->id) }}">
+                                                @csrf
+                                                @method('PUT')
+                                                <input type="hidden" name="status" value="accepted">
+                                                <input type="submit" class="btn btn-facebook my-2" data-toggle="sweet-alert" data-sweet-alert="success" value="Verifikasi Data">
+                                             </form>
+                                             <form method="POST" action="{{ url('/dashboardadmin/confirm/'.$data->id) }}">
+                                                @csrf
+                                                @method('PUT')
+                                                <input type="hidden" name="status" value="rejected">
+                                                <input type="submit" class="btn btn-pinterest my-2" value="Tolak">
+                                             </form>
                                              <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
                                           </div>
                                        </div>
@@ -137,6 +152,5 @@
 @endsection
 @section('javascript')
    <script>
-
    </script>
 @endsection

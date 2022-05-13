@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Team;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class TeamController extends Controller
 {
@@ -16,6 +17,14 @@ class TeamController extends Controller
    {
       $result = Team::all();
       //dd($result);
+      return view('admin.validasiregistrasi.index',compact('result'));
+   }
+
+   public function confirmation(Request $request, Team $team){
+      $team['status'] = $request->get('status');
+      $team->save();
+      $result = Team::all();
+      
       return view('admin.validasiregistrasi.index',compact('result'));
    }
 

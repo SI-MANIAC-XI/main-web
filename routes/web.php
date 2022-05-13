@@ -43,9 +43,12 @@ Route::post('/register','RegisterController@store');
 //Auth::routes();
 Route::get('/dashboardadmin', function() { return view('admin.adminwelcome'); });
 Route::resource('/verifikasiteam','TeamController');
+
 // Route::group(['middleware' => 'auth'], function () {
 //    Route::get('')
 // });
 //Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::put('/dashboardadmin/confirm/{team}','TeamController@confirmation');
