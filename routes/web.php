@@ -33,6 +33,7 @@ Route::get('login', function () {
     return view('auth.login');
 });
 Route::post('/login','AccountController@authenticate');
+Route::post('/logout','AccountController@logout');
 
 Route::get('register', function () {
     return view('auth.register');
@@ -41,8 +42,8 @@ Route::get('register', function () {
 Route::post('/register','RegisterController@store');
 
 //Auth::routes();
-Route::get('/dashboardadmin', function() { return view('admin.adminwelcome'); });
-Route::resource('/verifikasiteam','TeamController');
+Route::get('/dashboardadmin', function() { return view('admin.adminwelcome'); })->middleware('is_admin');
+Route::resource('/verifikasiteam','TeamController')->middleware('is_admin');
 
 // Route::group(['middleware' => 'auth'], function () {
 //    Route::get('')

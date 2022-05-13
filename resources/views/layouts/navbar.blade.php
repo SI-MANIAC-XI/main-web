@@ -26,11 +26,32 @@
             <a class="nav-link{{ request()->is('faq') ? ' active' : '' }}" href="/faq">FAQ</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="/login">Login</a></li>
-              <li><a class="dropdown-item" href="/register">Register</a></li>
-            </ul>
+            @auth
+            @if (auth()->check())
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Welcome {{ auth()->user()->username }}</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <form action="{{ url('/logout') }}" method="POST">
+                    @csrf
+                    <button type="submit" class="dropdown-item"> Logout</button>
+                  </form>  
+                </li>
+                @if (auth()->user()->is_admin == "1")
+                <li>
+                  <a class="dropdown-item" href="/dashboardadmin">Dashboard</a> 
+                </li>  
+                @endif
+              </ul>
+            @endauth
+            @else
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="/login">Login</a></li>
+                <li><a class="dropdown-item" href="/register">Register</a></li>
+              </ul>
+            @endif
+           
+            
           </li>
         </ul>
       </div>
