@@ -1,0 +1,56 @@
+.dashboard-container {
+    margin-top: 75px;
+    background-color: #aa8561;
+    padding: 30px 50px;
+    border-radius: 30px;
+    color: #eceeca;
+}
+
+.daftar-anggota {
+    padding: 20px;
+    background-color:#eceeca;
+    color: #aa8561;
+    border-radius: 15px;
+}
+
+.myInputFile {
+    border: none; 
+    margin-bottom: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.label-ganti-kp {
+    font-weight: 600;
+}
+
+.status {
+    width: 180px;
+    border-radius: 50px;
+}
+
+.status.ditolak {
+    background-color: #f3b240;
+    color: #c01940;
+}
+
+.myBtn {
+    background-color: #eceeca;
+    color: #A0583A;
+    font-weight: 800;
+    width: 300px;
+    max-width: 110%;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.myBtn:hover {
+    background-color: #d0d2ad;
+    color:#A0583A;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 30% !important;
+    }
+}

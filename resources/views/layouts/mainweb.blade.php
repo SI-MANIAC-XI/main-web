@@ -51,7 +51,7 @@
                     <div class="row">
                         <div class="col-12 mt-3 fs-3">Our Location</div>
                         <div class="col-12 mt-2">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.2775011754256!2d112.76559941456148!3d-7.322694694715246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fae13b9db541%3A0x9a3c82589fc76f35!2sInformatics%20Engineering%20UBAYA!5e0!3m2!1sen!2sid!4v1651768569242!5m2!1sen!2sid" width="80%" height="250"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7689.26769629826!2d112.76750596476232!3d-7.3212739372670725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7311b083dc2502a7!2sUBAYA%20(%20UNIVERSITAS%20SURABAYA%20)!5e0!3m2!1sen!2sid!4v1652534141596!5m2!1sen!2sid" width="80%" height="250"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>

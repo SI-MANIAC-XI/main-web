@@ -120,6 +120,7 @@ body {
     display: inline-block;
     color: #A0583A;
     margin-bottom: 10px;
+    background-color: transparent;
 }
 
 .have-account {
