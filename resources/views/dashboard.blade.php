@@ -26,15 +26,15 @@
                             <img src="https://source.unsplash.com/800x400" alt="" width="100%">
                         </div>
                         <div class="row justify-content-between">
-                            <div class="col-4">Nama</div>
+                            <div class="col-5">Nama</div>
                             <div class="col-7">NAMA KETUA</div>
                         </div>
                         <div class="row justify-content-between">
-                            <div class="col-4">Nomor HP</div>
+                            <div class="col-5">No HP</div>
                             <div class="col-7">NO HP KETUA</div>
                         </div>
                         <div class="row justify-content-between">
-                            <div class="col-4">Email</div>
+                            <div class="col-5">Email</div>
                             <div class="col-7">EMAIL KETUA</div>
                         </div>
                         <div class="row mt-3">
@@ -47,15 +47,15 @@
                             <img src="https://source.unsplash.com/800x401" alt="" width="100%">
                         </div>
                         <div class="row justify-content-between">
-                            <div class="col-4">Nama</div>
+                            <div class="col-5">Nama</div>
                             <div class="col-7">NAMA ANGGOTA 1</div>
                         </div>
                         <div class="row justify-content-between">
-                            <div class="col-4">Nomor HP</div>
+                            <div class="col-5">No HP</div>
                             <div class="col-7">NO HP ANGGOTA 1</div>
                         </div>
                         <div class="row justify-content-between">
-                            <div class="col-4">Email</div>
+                            <div class="col-5">Email</div>
                             <div class="col-7">EMAIL ANGGOTA 1</div>
                         </div>
                         <div class="row mt-3">
@@ -68,15 +68,15 @@
                             <img src="https://source.unsplash.com/800x402" alt="" width="100%">
                         </div>
                         <div class="row justify-content-between">
-                            <div class="col-4">Nama</div>
+                            <div class="col-5">Nama</div>
                             <div class="col-7">NAMA ANGGOTA 2</div>
                         </div>
                         <div class="row justify-content-between">
-                            <div class="col-4">Nomor HP</div>
+                            <div class="col-5">No HP</div>
                             <div class="col-7">NO HP ANGGOTA 2</div>
                         </div>
                         <div class="row justify-content-between">
-                            <div class="col-4">Email</div>
+                            <div class="col-5">Email</div>
                             <div class="col-7">EMAIL ANGGOTA 2</div>
                         </div>
                         <div class="row mt-3">
