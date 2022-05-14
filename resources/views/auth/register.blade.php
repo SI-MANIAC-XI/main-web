@@ -27,8 +27,9 @@
                                 <input type="text" name="username" id="txtUsername" class="myTextbox width-90" placeholder="Username" required>
                             <label class="myLabel">Password</label>
                                 <input type="password" name="password" id="txtPassword" class="myTextbox width-90" placeholder="Password" required>
-                                <div class="d-flex align-items-center" style="margin-left: 5%">
+                                <div class="d-flex align-items-center" style="margin-left: 5%; position: relative;">
                                     <input type="checkbox" class="myChkbox mx-2" onclick="showPassword()"> 
+                                    <span class="checkmark"></span>
                                     <span class="chkText">Show Password</span>
                                 </div>
                         </div>

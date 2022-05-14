@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
+    {{-- Font Awesome --}}
+    <script src="https://kit.fontawesome.com/9be5ea7e91.js" crossorigin="anonymous"></script>
+
     {{-- Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,12 +42,15 @@
                     <div class="row">
                         <div class="col-12 mt-3 fs-3">Social Media</div>
                         <div class="col-12">
-                            <a href="https://www.instagram.com/maniac_ubaya/" target="_blank" class="myIcon"><i class="bi bi-instagram"></i></a>
-                            <a href="https://www.youtube.com/channel/UCUVYlb7cc67RC17tNngSeug" target="_blank" class="myIcon"><i class="bi bi-youtube"></a></i>
+                            <i class="bi bi-instagram myIcon"></i> <a href="https://www.instagram.com/maniac_ubaya/" target="_blank" class="wa-num">maniac_ubaya</a> 
+                            <br>
+                            <i class="bi bi-youtube myIcon"></i> <a href="https://www.youtube.com/channel/UCUVYlb7cc67RC17tNngSeug" target="_blank" class="wa-num">MANIAC XI UBAYA</a>
+                            <br>
+                            <i class="fa-brands fa-line myIcon"></i> <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=994nxsfr" class="wa-num">@994nxsfr</a>
                         </div>
                         <div class="col-12 mt-4 fs-3">Contact Person</div>
-                        <div class="col-12">Meliyana : <a href="https://wa.me/+6282255940933" class="wa-num" target="_blank">082255940933</a></div>
-                        <div class="col-12">Alfian Dwi : <a href="https://wa.me/+6287855956975" class="wa-num" target="_blank">087855956975</a></div>
+                        <div class="col-12"><i class="bi bi-whatsapp myIcon"></i> Meliyana : <a href="https://wa.me/+6282255940933" class="wa-num" target="_blank">082255940933</a></div>
+                        <div class="col-12"><i class="bi bi-whatsapp myIcon"></i> Alfian Dwi : <a href="https://wa.me/+6287855956975" class="wa-num" target="_blank">087855956975</a></div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
