@@ -41,6 +41,8 @@ Route::get('register', function () {
 
 Route::post('/register','RegisterController@store');
 
+Route::delete('/deleteteam/{team}','TeamController@destroy')->middleware('is_admin');
+
 //Auth::routes();
 Route::get('/dashboardadmin', function() { return view('admin.adminwelcome'); })->middleware('is_admin');
 Route::resource('/verifikasiteam','TeamController')->middleware('is_admin');

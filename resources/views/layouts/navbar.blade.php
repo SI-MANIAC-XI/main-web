@@ -30,17 +30,17 @@
             @if (auth()->check())
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Welcome {{ auth()->user()->username }}</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                @if (auth()->user()->is_admin == "1")
+                <li>
+                  <a class="dropdown-item" href="/dashboardadmin">Dashboard</a> 
+                </li>  
+                @endif
                 <li>
                   <form action="{{ url('/logout') }}" method="POST">
                     @csrf
                     <button type="submit" class="dropdown-item"> Logout</button>
                   </form>  
                 </li>
-                @if (auth()->user()->is_admin == "1")
-                <li>
-                  <a class="dropdown-item" href="/dashboardadmin">Dashboard</a> 
-                </li>  
-                @endif
               </ul>
             @endauth
             @else

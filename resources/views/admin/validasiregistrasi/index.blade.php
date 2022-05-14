@@ -80,9 +80,12 @@
                            </td>
                            <td>{{ $data->school_name }}</td>
                            <td>
-
-                              <a href="#team_{{ $data->id }}" class="btn btn-google-plus" data-toggle="modal">Show Detail Verifikasi</a>
-
+                              <a href="#team_{{ $data->id }}" class="btn btn-twitter" data-toggle="modal">Show Detail Verifikasi</a>
+                              <form action="{{ url('deleteteam/'.$data->id) }}" method="POST">
+                                 @method('delete')
+                                 @csrf
+                                 <button class="btn btn-google-plus mt-3" id="btn-delete">Delete</button>
+                              </form>
                                  <!-- Modal -->
                                  <div class="modal fade" id="team_{{ $data->id }}" tabindex="-1" role="dialog" aria-hidden="true">
                                     <div class="modal-dialog modal-xl" role="document">
@@ -140,27 +143,10 @@
             <div class="card-footer py-4">
                <nav aria-label="...">
                   <ul class="pagination justify-content-end mb-0">
-                     <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">
-                           <i class="fas fa-angle-left"></i>
-                           <span class="sr-only">Previous</span>
-                        </a>
-                     </li>
-                     <li class="page-item active">
-                        <a class="page-link" href="#">1</a>
-                     </li>
-                     <li class="page-item">
-                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                     </li>
-                     <li class="page-item"><a class="page-link" href="#">3</a></li>
-                     <li class="page-item">
-                        <a class="page-link" href="#">
-                           <i class="fas fa-angle-right"></i>
-                           <span class="sr-only">Next</span>
-                        </a>
-                     </li>
+                     {{ $result->links() }}
                   </ul>
                </nav>
+               
             </div>
          </div>
          <!-- END card -->
@@ -194,8 +180,31 @@
          var name = $(this).data("name");
          event.preventDefault();
          swal({
-            title:'Are you sure to rejected this team ?',
+            title:'Are you sure to rejected this team?',
             text: "pastikan anda sudah validasi data dengan benar.",
+            type: "warning",
+            showCancelButton: true,
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            allowEnterKey: false,
+            confirmButtonColor: '#A0583A',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, sure!'
+         }).then((willaccepted) => {
+            if(willaccepted) {
+               form.submit();
+            }
+         });
+      });
+
+      // show confirmation button delete
+      $('#btn-delete').click(function(event) {
+         var form = $(this).closest("form");
+         var name = $(this).data("name");
+         event.preventDefault();
+         swal({
+            title:'Are you sure to delete this team?',
+            text: "pastikan anda menghapus data yang benar.",
             type: "warning",
             showCancelButton: true,
             allowOutsideClick: false,

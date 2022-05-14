@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Team;
+use App\TeamDetail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -15,7 +16,7 @@ class TeamController extends Controller
     */
    public function index()
    {
-      $result = Team::all();
+      $result = Team::latest()->paginate(1);
       //dd($result);
       return view('admin.validasiregistrasi.index', compact('result'));
    }
@@ -99,6 +100,9 @@ class TeamController extends Controller
     */
    public function destroy(Team $team)
    {
-      //
+      $detailTeam = TeamDetail::where('team_id',$team->id);
+      $detailTeam->delete();
+      Team::destroy($team->id);
+      return redirect()->back()->with('success', 'Data Peserta Berhasil Dihapus');
    }
 }
