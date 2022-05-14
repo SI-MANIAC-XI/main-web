@@ -17,15 +17,23 @@ class TeamController extends Controller
    {
       $result = Team::all();
       //dd($result);
-      return view('admin.validasiregistrasi.index',compact('result'));
+      return view('admin.validasiregistrasi.index', compact('result'));
    }
 
-   public function confirmation(Request $request, Team $team){
-      $team['status'] = $request->get('status');
+   public function confirmation(Request $request, Team $team)
+   {
+      //dd($request);
+      // $id = $request->get('id');
+      // $team = Team::find($id);
+      $team->status = $request->get('status');
       $team->save();
-      $result = Team::all();
-      
-      return view('admin.validasiregistrasi.index',compact('result'));
+      // //$result = Team::all();
+      if ($team->status == "accepted") {
+         return redirect()->back()->with('success', 'Verifikasi Accepted');
+      } else if ($team->status == "rejected") {
+         return redirect()->back()->with('success', 'Verifikasi Rejected');
+      }
+      //return view('admin.validasiregistrasi.index',compact('result'));
    }
 
    /**

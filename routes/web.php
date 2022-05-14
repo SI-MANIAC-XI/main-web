@@ -52,4 +52,4 @@ Route::resource('/verifikasiteam','TeamController')->middleware('is_admin');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::put('/dashboardadmin/confirm/{team}','TeamController@confirmation');
+Route::put('/dashboardadmin/confirm/{team}/','TeamController@confirmation');

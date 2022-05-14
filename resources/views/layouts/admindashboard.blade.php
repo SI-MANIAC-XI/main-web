@@ -33,11 +33,11 @@
 
   <!-- Custom CSS -->
    @yield('customcss')
-  <!-- Custom Javascript -->
-   @yield('javascript')
+
 </head>
 
 <body>
+   @include('sweetalert::alert')
   <!-- Sidenav -->
   <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
     <div class="scrollbar-inner">
@@ -260,10 +260,13 @@
   <!-- Demo JS - remove this in your project -->
   <script src="{{ asset('mainweb/admin/assets/js/demo.min.js') }}"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Custom Javascript -->
+   @yield('javascript')
 </body>
-<script>
+{{-- <script>
 jQuery(document).ready(function() {       
    // initiate layout and plugins
 });
-</script>
+</script> --}}
 </html>
