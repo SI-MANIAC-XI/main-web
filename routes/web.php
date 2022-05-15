@@ -31,7 +31,7 @@ Route::get('faq', function () {
 
 Route::get('login', function () {
     return view('auth.login');
-});
+})->name('login');
 Route::post('/login','AccountController@authenticate');
 Route::post('/logout','AccountController@logout');
 
@@ -56,6 +56,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::put('/dashboardadmin/confirm/{team}/','TeamController@confirmation');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
+Route::get('/dashboard/{account}', 'TeamController@TeamDisplay')->middleware('auth');
+Route::put('/updateteam', 'TeamDetailController@updateImg');

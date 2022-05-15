@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Account;
 use App\Team;
 use App\TeamDetail;
 use Illuminate\Http\Request;
@@ -104,5 +105,10 @@ class TeamController extends Controller
       $detailTeam->delete();
       Team::destroy($team->id);
       return redirect()->back()->with('success', 'Data Peserta Berhasil Dihapus');
+   }
+
+   public function TeamDisplay(Account $account){
+      $team = Team::where('account_id', $account->id)->first();
+      return view('dashboard', compact('team'));
    }
 }

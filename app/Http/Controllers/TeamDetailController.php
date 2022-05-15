@@ -72,6 +72,45 @@ class TeamDetailController extends Controller
         //
     }
 
+    public function updateImg(Request $request)
+    {
+        $imgFolder = "images";
+        //ImageMember0
+        $idMember0 = $request->get('idAnggota0');
+        $member0 = TeamDetail::find($idMember0);
+        unlink('images/'.$member0->image);
+
+        $imgFile = time()."_".$request->file('imgAnggota0')->getClientOriginalName();
+        $request->file('imgAnggota0')->move($imgFolder, $imgFile);
+        $member0->image = $imgFile;
+
+        $member0->save();
+
+        //ImageMember1
+        $idMember1 = $request->get('idAnggota1');
+        $member1 = TeamDetail::find($idMember1);
+        unlink('images/'.$member1->image);
+
+        $imgFile = time()."_".$request->file('imgAnggota1')->getClientOriginalName();
+        $request->file('imgAnggota1')->move($imgFolder, $imgFile);
+        $member1->image = $imgFile;
+
+        $member1->save();
+
+        //ImageMember2
+        $idMember2 = $request->get('idAnggota2');
+        $member2 = TeamDetail::find($idMember2);
+        unlink('images/'.$member2->image);
+
+        $imgFile = time()."_".$request->file('imgAnggota2')->getClientOriginalName();
+        $request->file('imgAnggota2')->move($imgFolder, $imgFile);
+        $member2->image = $imgFile;
+
+        $member2->save();
+        
+        return redirect()->back();
+    }
+
     /**
      * Remove the specified resource from storage.
      *

@@ -25,6 +25,13 @@
           <li class="nav-item">
             <a class="nav-link{{ request()->is('faq') ? ' active' : '' }}" href="/faq">FAQ</a>
           </li>
+          @auth
+          @if(auth()->user()->is_admin == "0")
+          <li class="nav-item">
+            <a class="nav-link{{ request()->is('dashboard/'.auth()->user()->id) ? ' active' : '' }}" href="{{ url('dashboard/'.auth()->user()->id) }}">Your Team</a>
+          </li>
+          @endif
+          @endauth
           <li class="nav-item dropdown">
             @auth
             @if (auth()->check())

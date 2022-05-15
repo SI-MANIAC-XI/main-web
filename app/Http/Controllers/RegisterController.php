@@ -74,6 +74,6 @@ class RegisterController extends Controller
 
         $dataMember3->save();
 
-        dd("Works");
+        return redirect('/');
     }
 }
