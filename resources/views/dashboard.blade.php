@@ -19,7 +19,7 @@
                     <h3>Anggota</h3>
                 </div>
             </div>
-            <form action="/updateteam" method="POST" enctype="multipart/form-data">
+            <form action={{ url('updateteam/'.$team->id) }} method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <div class="row mt-2 justify-content-evenly">

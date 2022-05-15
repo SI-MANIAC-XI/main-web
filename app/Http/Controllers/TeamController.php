@@ -17,7 +17,7 @@ class TeamController extends Controller
     */
    public function index()
    {
-      $result = Team::latest()->paginate(1);
+      $result = Team::latest()->paginate(6);
       //dd($result);
       return view('admin.validasiregistrasi.index', compact('result'));
    }
@@ -101,13 +101,18 @@ class TeamController extends Controller
     */
    public function destroy(Team $team)
    {
-      $detailTeam = TeamDetail::where('team_id',$team->id);
-      $detailTeam->delete();
-      Team::destroy($team->id);
-      return redirect()->back()->with('success', 'Data Peserta Berhasil Dihapus');
+      try {
+         $detailTeam = TeamDetail::where('team_id', $team->id);
+         $detailTeam->delete();
+         Team::destroy($team->id);
+         return redirect()->back()->with('success', 'Data Peserta Berhasil Dihapus');
+      } catch (\PDOException $e) {
+         return redirect()->back()->with('success', 'Data Peserta Gagal Dihapus');
+      }
    }
 
-   public function TeamDisplay(Account $account){
+   public function TeamDisplay(Account $account)
+   {
       $team = Team::where('account_id', $account->id)->first();
       return view('dashboard', compact('team'));
    }

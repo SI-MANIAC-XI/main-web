@@ -32,20 +32,18 @@ Route::get('faq', function () {
 Route::get('login', function () {
     return view('auth.login');
 })->name('login');
-Route::post('/login','AccountController@authenticate');
-Route::post('/logout','AccountController@logout');
+
+Route::post('/login', 'AccountController@authenticate');
+Route::post('/logout', 'AccountController@logout');
 
 Route::get('register', function () {
     return view('auth.register');
 });
 
-Route::post('/register','RegisterController@store');
-
-Route::delete('/deleteteam/{team}','TeamController@destroy')->middleware('is_admin');
+Route::post('/register', 'RegisterController@store');
 
 //Auth::routes();
-Route::get('/dashboardadmin', function() { return view('admin.adminwelcome'); })->middleware('is_admin');
-Route::resource('/verifikasiteam','TeamController')->middleware('is_admin');
+
 
 // Route::group(['middleware' => 'auth'], function () {
 //    Route::get('')
@@ -54,7 +52,16 @@ Route::resource('/verifikasiteam','TeamController')->middleware('is_admin');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::put('/dashboardadmin/confirm/{team}/','TeamController@confirmation');
+Route::group(['middleware' => 'is_admin'], function () {
+    Route::put('/dashboardadmin/confirm/{team}/', 'TeamController@confirmation');
+    Route::resource('/verifikasiteam', 'TeamController');
+    Route::get('/dashboardadmin', function () {
+        return view('admin.adminwelcome');
+    });
+    Route::delete('/deleteteam/{team}', 'TeamController@destroy');
+});
 
-Route::get('/dashboard/{account}', 'TeamController@TeamDisplay')->middleware('auth');
-Route::put('/updateteam', 'TeamDetailController@updateImg');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/dashboard/{account}', 'TeamController@TeamDisplay');
+    Route::put('/updateteam/{team}', 'TeamDetailController@updateImg');
+});

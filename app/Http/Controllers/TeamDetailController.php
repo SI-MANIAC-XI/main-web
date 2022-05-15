@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Team;
 use App\TeamDetail;
 use Illuminate\Http\Request;
 
@@ -72,42 +73,52 @@ class TeamDetailController extends Controller
         //
     }
 
-    public function updateImg(Request $request)
+    public function updateImg(Request $request, Team $team)
     {
+        $team['status'] = "pending";
+        $team->save();
+
         $imgFolder = "images";
-        //ImageMember0
-        $idMember0 = $request->get('idAnggota0');
-        $member0 = TeamDetail::find($idMember0);
-        unlink('images/'.$member0->image);
 
-        $imgFile = time()."_".$request->file('imgAnggota0')->getClientOriginalName();
-        $request->file('imgAnggota0')->move($imgFolder, $imgFile);
-        $member0->image = $imgFile;
+        if ($request->hasFile('imgAnggota0')) {
+            //ImageMember0
+            $idMember0 = $request->get('idAnggota0');
+            $member0 = TeamDetail::find($idMember0);
+            unlink('images/' . $member0->image);
 
-        $member0->save();
+            $imgFile = time() . "_" . $request->file('imgAnggota0')->getClientOriginalName();
+            $request->file('imgAnggota0')->move($imgFolder, $imgFile);
+            $member0->image = $imgFile;
 
-        //ImageMember1
-        $idMember1 = $request->get('idAnggota1');
-        $member1 = TeamDetail::find($idMember1);
-        unlink('images/'.$member1->image);
+            $member0->save();
+        }
 
-        $imgFile = time()."_".$request->file('imgAnggota1')->getClientOriginalName();
-        $request->file('imgAnggota1')->move($imgFolder, $imgFile);
-        $member1->image = $imgFile;
+        if ($request->hasFile('imgAnggota1')) {
+            //ImageMember1
+            $idMember1 = $request->get('idAnggota1');
+            $member1 = TeamDetail::find($idMember1);
+            unlink('images/' . $member1->image);
 
-        $member1->save();
+            $imgFile = time() . "_" . $request->file('imgAnggota1')->getClientOriginalName();
+            $request->file('imgAnggota1')->move($imgFolder, $imgFile);
+            $member1->image = $imgFile;
 
-        //ImageMember2
-        $idMember2 = $request->get('idAnggota2');
-        $member2 = TeamDetail::find($idMember2);
-        unlink('images/'.$member2->image);
+            $member1->save();
+        }
 
-        $imgFile = time()."_".$request->file('imgAnggota2')->getClientOriginalName();
-        $request->file('imgAnggota2')->move($imgFolder, $imgFile);
-        $member2->image = $imgFile;
+        if ($request->hasFile('imgAnggota2')) {
+            //ImageMember2
+            $idMember2 = $request->get('idAnggota2');
+            $member2 = TeamDetail::find($idMember2);
+            unlink('images/' . $member2->image);
 
-        $member2->save();
-        
+            $imgFile = time() . "_" . $request->file('imgAnggota2')->getClientOriginalName();
+            $request->file('imgAnggota2')->move($imgFolder, $imgFile);
+            $member2->image = $imgFile;
+
+            $member2->save();
+        }
+
         return redirect()->back();
     }
 
