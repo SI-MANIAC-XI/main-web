@@ -24,15 +24,6 @@ body {
     font-size: 1.2em;
     position: relative;
 }
-#footer404{
-    background-color: #aa8561;
-    margin-top: 250px;
-    padding: 20px 0;
-    color: #eceeca;
-    font-weight: 600;
-    font-size: 1.2em;
-    position: relative;
-}
 
 .myIcon {
     font-size: 1.2em;
@@ -200,14 +191,14 @@ body {
     border-radius: 10px;
     padding: 6px 10px;
 }
-.text404{
-    text-align: center;
-    margin-top: 100px;
-    
+
+.text404 h1{
+    font-size: 5em;
 }
-.myBtn{
-   background-color: #7f462e;
-   margin-left: 646px;
+
+.text404 p {
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 .myInputFile::-webkit-file-upload-button {
