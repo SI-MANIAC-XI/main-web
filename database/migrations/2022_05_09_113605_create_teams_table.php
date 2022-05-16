@@ -20,7 +20,7 @@ class CreateTeamsTable extends Migration
             $table->string('school_name');
             $table->string('school_address');
             $table->string('status')->default('pending');
-            $table->string('message')->default("");
+            $table->string('message')->nullable();
             $table->timestamps();
         });
     }
