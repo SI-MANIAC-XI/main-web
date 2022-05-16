@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <section id="not-foud" style="margin-top: 100px">
+    <section id="not-foud" style="margin: 100px 0">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 text-center">

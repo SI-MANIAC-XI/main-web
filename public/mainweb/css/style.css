@@ -219,13 +219,13 @@ body {
 
 @media (max-width: 767px) {
     .footer-img {
-        bottom: 690px;
+        bottom: 730px;
     }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 511px) {
     .footer-img {
-        bottom: 685px;
+        bottom: 720px;
     }
 
     #footer {
