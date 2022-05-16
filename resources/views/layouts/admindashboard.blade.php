@@ -75,6 +75,7 @@
                 </ul>
               </div>
             </li>
+            <!-- 
             <li class="nav-item">
               <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                 <i class="ni ni-money-coins text-orange"></i>
@@ -100,6 +101,12 @@
                   </li>
                 </ul>
               </div>
+            </li>
+            -->
+            <li class="nav-item">
+              <a href="{{ url('home') }}" class="nav-link">
+                <span class="nav-link-text">Back to Home</span>
+              </a>
             </li>
           </ul>
         </div>

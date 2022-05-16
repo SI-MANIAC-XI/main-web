@@ -54,7 +54,7 @@
                     <div class="col-lg-12 text-center d-flex flex-column justify-content-center align-items-center">
                         <h3>Status</h3>
                         <h4 class="status ditolak" style="font-weight: 700; text-transform: uppercase;">{{ $team->status }}</h4>
-                        <p class="keterangan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, numquam!</p>
+                        <p class="keterangan">{{ $team->message }}</p>
                         @if ($team->status != 'accepted')
                         <button type="submit" class="btn myBtn">Simpan Perubahan</button>
                         @endif

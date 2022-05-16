@@ -117,6 +117,6 @@ class TeamController extends Controller
    public function TeamDisplay(Account $account)
    {
       $team = Team::where('account_id', $account->id)->first();
-      return view('dashboard', compact('team'));
+      return view('teams.dashboard', compact('team'));
    }
 }
