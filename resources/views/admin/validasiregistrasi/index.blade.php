@@ -84,7 +84,7 @@
                               <form action="{{ url('deleteteam/'.$data->id) }}" method="POST">
                                  @method('delete')
                                  @csrf
-                                 <button class="btn btn-google-plus mt-3" id="btn-delete">Delete</button>
+                                 <button class="btn btn-danger mt-3" id="btn-delete">Delete</button>
                               </form>
                                  <!-- Modal -->
                                  <div class="modal fade" id="team_{{ $data->id }}" tabindex="-1" role="dialog" aria-hidden="true">
@@ -112,6 +112,27 @@
                                                       </div>
                                                    </div>
                                                 @endforeach
+                                                {{-- Form Tolak Verifikasi --}}
+                                                <div class="col-lg-12">
+                                                   <div class="card">
+                                                      <div class="card-header">
+                                                         <h3 class="mb-0">Tolak Verifikasi</h3>
+                                                      </div>
+                                                      <div class="card-body">
+                                                         <form method="POST" action="{{ url('/dashboardadmin/reject/'.$data->id) }}">
+                                                            @csrf
+                                                            @method('PUT')
+                                                            <div class="form-group">
+                                                               <label class="form-control-label" for="txt-message">Input Message</label>
+                                                               <textarea class="form-control" id="txt-message" rows="3" name="message"></textarea>
+                                                            </div>
+                                                            <input type="hidden" name="status" value="rejected">
+                                                            <input type="submit" class="btn btn-pinterest my-2" id="btn-reject" value="Tolak">
+                                                         </form>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                {{-- End Form Tolak Verifikasi --}}
                                              </div>
                                           </div>
                                           <div class="modal-footer">
@@ -120,12 +141,6 @@
                                                 @method('PUT')
                                                 <input type="hidden" name="status" value="accepted">
                                                 <input type="submit" class="btn btn-facebook my-2" id="btn-accept" value="Verifikasi Data">
-                                             </form>
-                                             <form method="POST" action="{{ url('/dashboardadmin/confirm/'.$data->id) }}">
-                                                @csrf
-                                                @method('PUT')
-                                                <input type="hidden" name="status" value="rejected">
-                                                <input type="submit" class="btn btn-pinterest my-2" id="btn-reject" value="Tolak">
                                              </form>
                                              <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
                                           </div>

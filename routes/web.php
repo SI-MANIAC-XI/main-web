@@ -54,6 +54,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'is_admin'], function () {
     Route::put('/dashboardadmin/confirm/{team}/', 'TeamController@confirmation');
+    Route::put('/dashboardadmin/reject/{team}/', 'TeamController@rejectConfirmation');
     Route::resource('/verifikasiteam', 'TeamController');
     Route::get('/dashboardadmin', function () {
         return view('admin.adminwelcome');

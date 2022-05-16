@@ -30,14 +30,17 @@ class TeamController extends Controller
       $team->status = $request->get('status');
       $team->save();
       // //$result = Team::all();
-      if ($team->status == "accepted") {
-         return redirect()->back()->with('success', 'Verifikasi Accepted');
-      } else if ($team->status == "rejected") {
-         return redirect()->back()->with('success', 'Verifikasi Rejected');
-      }
+      return redirect()->back()->with('success', 'Verifikasi Accepted');
       //return view('admin.validasiregistrasi.index',compact('result'));
    }
-
+   
+   public function rejectConfirmation(Request $request, Team $team)
+   {
+      $team->status = $request->get('status');
+      $team->message = $request->get('message');
+      $team->save();
+      return redirect()->back()->with('success', 'Verifikasi Rejected');
+   }
    /**
     * Show the form for creating a new resource.
     *
@@ -107,7 +110,7 @@ class TeamController extends Controller
          Team::destroy($team->id);
          return redirect()->back()->with('success', 'Data Peserta Berhasil Dihapus');
       } catch (\PDOException $e) {
-         return redirect()->back()->with('success', 'Data Peserta Gagal Dihapus');
+         return redirect()->back()->with('error', 'Data Peserta Gagal Dihapus');
       }
    }
 
