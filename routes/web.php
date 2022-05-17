@@ -25,9 +25,9 @@ Route::get('competition', function () {
     return view('competition');
 });
 
-Route::get('404', function () {
-    return view('404');
-});
+// Route::get('404', function () {
+//     return view('404');
+// });
 
 Route::get('faq', function () {
     return view('faq');
