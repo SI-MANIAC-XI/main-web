@@ -28,7 +28,7 @@
     <div class="accordion-item faq-radialGradient">
         <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed color-title-faq faq-radialGradient-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Apakah MANIAC XI akan diadakan secara&nbsp <i>offline</i>&nbsp atau&nbsp <i>online</i>?
+            <p style="margin-bottom: 0;">Apakah MANIAC XI akan diadakan secara&nbsp <i>offline</i>&nbsp atau&nbsp <i>online</i>?</p>
         </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">

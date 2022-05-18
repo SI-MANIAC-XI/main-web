@@ -12,7 +12,7 @@
                     <div class="text404 d-flex flex-column align-items-center">
                         <h1>403</h1>
                         <p>Oops! Anda tidak memiliki akses ke halaman ini</p>
-                        <a href="/" class="btn myBtn text-center" style="width: 250px; max-width: 90%;">Return to Homepage</a>
+                        <a href="/" class="btn myBtn text-center" style="width: 250px; max-width: 90%;">Kembali ke Homepage</a>
                     </div>
                 </div>
             </div>

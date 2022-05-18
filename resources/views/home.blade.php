@@ -15,10 +15,7 @@
         <div class="row justify-content-center">
             <div class="about-text">
                 <div class="col-lg-10 mx-auto" id="header-text "style="text-align: center;">
-                    <img src="{{ asset('../mainweb/img/logo/logo-maniac-xi.png') }}" alt="" width="80%"  >
-                    <div class="caption-container">
-                        <div class="mb-5 mb-4 caption">Race for the Throne</div>
-                    </div>
+                    <img src="{{ asset('../mainweb/img/logo/logo-maniac-xi-2.png') }}" alt="" width="80%">
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -103,7 +100,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 d-flex mt-3">
-                        <a href="mainweb/img/poster/poster.jpg" target="blank"><img style="width:100%; height:100%; object-fit: contain;" src="{{asset('../mainweb/img/poster/poster.jpg')}}" alt="poster"></a>
+                        <a href="mainweb/img/poster/poster.png" target="blank"><img style="width:100%; height:100%; object-fit: contain;" src="{{asset('../mainweb/img/poster/poster.png')}}" alt="poster"></a>
                     </div>
                 </div>
 			</div>
