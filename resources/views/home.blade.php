@@ -130,7 +130,7 @@
                     <img src="{{ asset('../mainweb/img/bg-coklat.jpg') }}" alt="" class="rounded-circle" width="110" height="110">
                 </div>
                 <div class="d-flex justify-content-center my-2 fs-3" style="color: #ECEECA">Juara 2</div>
-                <div class="d-flex justify-content-center my-2 fw-bolder fs-3" style="color: #FAE14D">Rp 2.500.000</div>
+                <div class="d-flex justify-content-center my-2 fw-bolder fs-3" style="color: #FAE14D">Rp 3.000.000</div>
                 <div class="text-center fs-6" style="color: #ECEECA">
                     Potongan USP sebesar 50% ( Jika masuk Jurusan Teknik Informatika Program Kekhususan Multimedia ) Piala MANIAC + Sertifikat
                 </div>
