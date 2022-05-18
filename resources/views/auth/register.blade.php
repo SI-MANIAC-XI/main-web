@@ -43,7 +43,7 @@
                             <label class="myLabel">Email</label>
                                 <input type="email" name="email" id="txtEmailKetua" class="myTextbox width-90" placeholder="Email" required>
                             <label class="myLabel">Kartu Pelajar</label>
-                                <input type="file" accept="image/*" name="image" id="KartuPelajarKetua" class="myInputFile width-90" required>
+                                <input type="file" accept="image/*" name="image" id="KartuPelajarKetua formFileMultiple" class="myInputFile width-90 form-control bg-transparent" style="color:#a0583a;" required>
                         </div>
 
                         <div class="data-anggota anggota-1">
@@ -55,7 +55,7 @@
                             <label class="myLabel">Email</label>
                                 <input type="email" name="email1" id="txtEmailAnggota1" class="myTextbox width-90" placeholder="Email" required>
                             <label class="myLabel">Kartu Pelajar</label>
-                                <input type="file" accept="image/*" name="image1" id="KartuPelajarAnggota1" class="myInputFile width-90" required>
+                                <input type="file" accept="image/*" name="image1" id="KartuPelajarAnggota1 formFileMultiple" class="myInputFile width-90 form-control bg-transparent" style="color:#a0583a;" required>
                         </div>
 
                         <div class="data-anggota anggota-2">
@@ -67,7 +67,7 @@
                             <label class="myLabel">Email</label>
                                 <input type="email" name="email2" id="txtEmailAnggota2" class="myTextbox width-90" placeholder="Email" required>
                             <label class="myLabel">Kartu Pelajar</label>
-                                <input type="file" accept="image/*" name="image2" id="KartuPelajarAnggota2" class="myInputFile width-90" required>
+                                <input type="file" accept="image/*" name="image2" id="KartuPelajarAnggota2 formFileMultiple" class="myInputFile width-90 form-control bg-transparent" style="color:#a0583a;" required>
                         </div>
 
                         <button class="btn myBtn width-90 mt-5" type="submit">Register</button>
