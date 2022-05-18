@@ -25,27 +25,45 @@
                             aria-label="Slide 4"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
                             aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                            aria-label="Slide 8"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="https://images.unsplash.com/photo-1586227740560-8cf2732c1531?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=961&q=80"
-                                class="d-block w-100" alt="...">
+                            <img src="{{ asset("../mainweb/img/photos/image7.jpg") }}"
+                                class="d-block w-100" alt="MANIAC X">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1651693029270-bf3c29ad0b20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                                class="d-block w-100" alt="...">
+                            <img src="{{ asset("../mainweb/img/photos/image6.jpg") }}"
+                                class="d-block w-100" alt="MANIAC X">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1648737966150-0ca228eedfa0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                class="d-block w-100" alt="...">
+                            <img src="{{ asset("../mainweb/img/photos/image9.jpg") }}"
+                                class="d-block w-100" alt="MANIAC X">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                class="d-block w-100" alt="...">
+                            <img src="{{ asset("../mainweb/img/photos/image8.jpg") }}"
+                                class="d-block w-100" alt="MANIAC X">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1530099486328-e021101a494a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=947&q=80"
-                                class="d-block w-100" alt="...">
+                            <img src="{{ asset("../mainweb/img/photos/image1.jpg") }}"
+                                class="d-block w-100" alt="MANIAC IX">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ asset("../mainweb/img/photos/image2.jpg") }}"
+                                class="d-block w-100" alt="MANIAC IX">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ asset("../mainweb/img/photos/image3.jpg") }}"
+                                class="d-block w-100" alt="MANIAC IX">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ asset("../mainweb/img/photos/image4.jpg") }}"
+                                class="d-block w-100" alt="MANIAC IX">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -61,12 +79,17 @@
                 </div>
             </div>
             <div class="carousel-desc">
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cum illum
-                    voluptas fuga repellat et
-                    ipsa sint, voluptates deserunt obcaecati iure beatae fugiat cupiditate nisi provident vel ea
-                    aut?
-                    Reprehenderit dolore tempora sint incidunt, aspernatur accusantium libero quidem ex excepturi
-                    inventore aliquid amet, animi porro consequuntur repellendus ipsam facere a?</p>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="{{ asset("../mainweb/img/maskot/cewek maskot.png") }}" alt="Maskot Wanita" width="60%">
+                    </div>
+                    <div class="col-8">
+                        <p class="mb-0"><strong>MANIAC (Multimedia and Interactive Art Competition)</strong> merupakan lomba berbasis multimedia untuk siswa SMA/K sederjat yang mencakup rally, dan design games assets. MANIAC diselenggarakan oleh Program Studi Informatika program Multimedia Universitas Surabaya.</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="{{ asset("../mainweb/img/maskot/cowok maskot.png") }}" alt="Maskot Pria" width="60%">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container">
