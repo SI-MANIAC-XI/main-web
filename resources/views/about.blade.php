@@ -80,14 +80,14 @@
             </div>
             <div class="carousel-desc">
                 <div class="row">
-                    <div class="col-2">
-                        <img src="{{ asset("../mainweb/img/maskot/cewek maskot.png") }}" alt="Maskot Wanita" width="60%">
+                    <div class="col-lg-2">
+                        <img src="{{ asset("../mainweb/img/maskot/cewek maskot.png") }}" alt="Maskot Wanita" class="maskot" width="60%">
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-8">
                         <p class="mb-0"><strong>MANIAC (Multimedia and Interactive Art Competition)</strong> merupakan lomba berbasis multimedia untuk siswa SMA/K sederjat yang mencakup rally, dan design games assets. MANIAC diselenggarakan oleh Program Studi Informatika program Multimedia Universitas Surabaya.</p>
                     </div>
-                    <div class="col-2">
-                        <img src="{{ asset("../mainweb/img/maskot/cowok maskot.png") }}" alt="Maskot Pria" width="60%">
+                    <div class="col-lg-2">
+                        <img src="{{ asset("../mainweb/img/maskot/cowok maskot.png") }}" alt="Maskot Pria" class="maskot" width="60%">
                     </div>
                 </div>
             </div>

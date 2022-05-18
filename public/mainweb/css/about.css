@@ -22,7 +22,7 @@ iframe{
 }
 
 .carousel{
-    width: 90%;
+    width: 80%;
     margin:auto;
 }
 
@@ -30,4 +30,24 @@ iframe{
     padding: 2em;
     background-color: #A0583A;
     border-radius: 0 0 30px 30px;
+}
+
+@media (max-width: 992px) {
+    .maskot {
+        display: none;
+    }
+
+    .carousel {
+        width: 90%
+    }
+}
+
+@media (max-width: 577px) {
+    .carousel-cont {
+        width: 100%;
+    }
+
+    .carousel {
+        width: 95%
+    }
 }
