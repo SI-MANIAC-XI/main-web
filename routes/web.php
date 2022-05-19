@@ -14,34 +14,34 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('home');
+   return view('home');
 });
 
-Route::get('about', function () {
-    return view('about');
+Route::get('/about', function () {
+   return view('about');
 });
 
-Route::get('competition', function () {
-    return view('competition');
+Route::get('/competition', function () {
+   return view('competition');
 });
 
 // Route::get('404', function () {
 //     return view('404');
 // });
 
-Route::get('faq', function () {
-    return view('faq');
+Route::get('/faq', function () {
+   return view('faq');
 });
 
-Route::get('login', function () {
-    return view('auth.login');
+Route::get('/login', function () {
+   return view('auth.login');
 })->name('login');
 
 Route::post('/login', 'AccountController@authenticate');
 Route::post('/logout', 'AccountController@logout');
 
-Route::get('register', function () {
-    return view('auth.register');
+Route::get('/register', function () {
+   return view('auth.register');
 });
 
 Route::post('/register', 'RegisterController@store');
@@ -57,21 +57,21 @@ Route::post('/register', 'RegisterController@store');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'is_admin'], function () {
-    Route::put('/dashboardadmin/confirm/{team}/', 'TeamController@confirmation');
-    Route::put('/dashboardadmin/reject/{team}/', 'TeamController@rejectConfirmation');
-    Route::resource('/verifikasiteam', 'TeamController');
-    Route::get('/dashboardadmin', function () {
-        return view('admin.adminwelcome');
-    });
-    Route::delete('/deleteteam/{team}', 'TeamController@destroy');
+   Route::put('/dashboardadmin/confirm/{team}/', 'TeamController@confirmation');
+   Route::put('/dashboardadmin/reject/{team}/', 'TeamController@rejectConfirmation');
+   Route::resource('/verifikasiteam', 'TeamController');
+   Route::get('/dashboardadmin', function () {
+      return view('admin.adminwelcome');
+   });
+   Route::delete('/deleteteam/{team}', 'TeamController@destroy');
 });
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/dashboard/{account}', 'TeamController@TeamDisplay');
-    Route::put('/updateteam/{team}', 'TeamDetailController@updateImg');
+   Route::get('/dashboard/{account}', 'TeamController@TeamDisplay');
+   Route::put('/updateteam/{team}', 'TeamDetailController@updateImg');
 });
 
 Route::group(['middleware' => 'is_super_admin'], function () {
-    Route::get('/dashboardAkun', 'AccountController@index');
-    Route::put('/updateAkun/{account}', 'AccountController@update');
+   Route::get('/dashboardAkun', 'AccountController@index');
+   Route::put('/updateAkun/{account}', 'AccountController@update');
 });

@@ -22,18 +22,18 @@
                             <Label class="myLabel">Nama Tim</Label>
                             <input type="text" name="team_name" id="txtNamaTim"
                                 class="myTextbox width-90 @error('team_name') is-invalid @enderror" placeholder="Nama Tim"
-                                required>
+                                >
                             @error('team_name')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                             @enderror
                             <label class="myLabel">Nama Sekolah</label>
                             <input type="text" name="school_name" id="txtNamaSekolah"
                                 class="myTextbox width-90 @error('school_name') is-invalid @enderror"
-                                placeholder="Nama Sekolah" required>
+                                placeholder="Nama Sekolah" >
                             @error('school_name')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                             @enderror
@@ -42,36 +42,36 @@
                                 class="myTextbox width-90  @error('school_address') is-invalid @enderror"
                                 placeholder="cth. Jalan Raya Kalirungkut, Surabaya 60293"
                                 style="padding-top: 5px; padding-bottom: 5px; height: 80px; min-height: 40px;"
-                                required></textarea>
+                                ></textarea>
                             @error('school_address')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                             @enderror
                             <label class="myLabel">No. Telepon Sekolah</label>
                             <input type="text" name="school_number" id="txtNamaSekolah"
                                 class="myTextbox width-90  @error('school_number') is-invalid @enderror"
-                                placeholder="No. Telepon Sekolah" required>
+                                placeholder="No. Telepon Sekolah" >
                             @error('school_number')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                             @enderror
                             <label class="myLabel">Username</label>
                             <input type="text" name="username" id="txtUsername"
                                 class="myTextbox width-90  @error('username') is-invalid @enderror" placeholder="Username"
-                                required>
+                                >
                             @error('username')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                             @enderror
                             <label class="myLabel">Password</label>
                             <input type="password" name="password" id="txtPassword"
                                 class="myTextbox width-90 @error('password') is-invalid @enderror" placeholder="Password"
-                                required>
+                                >
                             @error('password')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                             @enderror
@@ -87,27 +87,27 @@
                             <label class="myLabel">Nama Ketua Tim</label>
                             <input type="text" name="name" id="txtNamaKetua"
                                 class="myTextbox width-90 @error('name') is-invalid @enderror" placeholder="Nama Ketua Tim"
-                                required>
+                                >
                             @error('name')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                             @enderror
                             <label class="myLabel">Nomor HP</label>
                             <input type="text" name="phone_number" id="txtNoHpKetua"
                                 class="myTextbox width-90 @error('phone_number') is-invalid @enderror"
-                                placeholder="Nomor HP" required>
+                                placeholder="Nomor HP" >
                             @error('phone_number')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                             @enderror
                             <label class="myLabel">Email</label>
                             <input type="email" name="email" id="txtEmailKetua"
                                 class="myTextbox width-90 @error('email') is-invalid @enderror" placeholder="Email"
-                                required>
+                                >
                             @error('email')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                             @enderror
@@ -117,7 +117,7 @@
                                 class="myInputFile width-90 form-control bg-transparent @error('image') is-invalid @enderror"
                                 style="color:#a0583a;" required>
                             @error('image')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                             @enderror
@@ -128,25 +128,25 @@
                             <h5 class="text-center mt-5" style="font-weight: 600;">Data Anggota 1</h5>
                             <label class="myLabel">Nama Anggota 1</label>
                             <input type="text" name="name1" id="txtNamaAnggota1" class="myTextbox width-90"
-                                placeholder="Nama Anggota 1" required>
+                                placeholder="Nama Anggota 1">
                             @error('name1')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                             @enderror
                             <label class="myLabel">Nomor HP</label>
                             <input type="text" name="phone_number1" id="txtNoHpAnggota1" class="myTextbox width-90"
-                                placeholder="Nomor HP" required>
+                                placeholder="Nomor HP">
                                 @error('phone_number1')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                                 @enderror
                             <label class="myLabel">Email</label>
                             <input type="email" name="email1" id="txtEmailAnggota1" class="myTextbox width-90"
-                                placeholder="Email" required>
+                                placeholder="Email">
                                 @error('email1')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                                 @enderror
@@ -155,7 +155,7 @@
                                 id="KartuPelajarAnggota1 formFileMultiple"
                                 class="myInputFile width-90 form-control bg-transparent" style="color:#a0583a;" required>
                                 @error('image1')
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                                 @enderror
@@ -165,25 +165,25 @@
                             <h5 class="text-center mt-5" style="font-weight: 600;">Data Anggota 2</h5>
                             <label class="myLabel">Nama Anggota 2</label>
                             <input type="text" name="name2" id="txtNamaAnggota2" class="myTextbox width-90 @error('name2') is-invalid @enderror"
-                                placeholder="Nama Anggota 2" required>
+                                placeholder="Nama Anggota 2">
                                 @error('name2')
-                                 <div class="invalid-feedback">
+                                 <div class="invalid-feedback text-center">
                                     {{ $message }}
                                  </div>
                                 @enderror
                             <label class="myLabel">Nomor HP</label>
                             <input type="text" name="phone_number2" id="txtNoHpAnggota2" class="myTextbox width-90 @error('phone_number2') is-invalid @enderror"
-                                placeholder="Nomor HP" required>
+                                placeholder="Nomor HP">
                                  @error('phone_number2')
-                                 <div class="invalid-feedback">
+                                 <div class="invalid-feedback text-center">
                                     {{ $message }}
                                  </div>
                                 @enderror
                             <label class="myLabel">Email</label>
                             <input type="email" name="email2" id="txtEmailAnggota2" class="myTextbox width-90 @error('email2') is-invalid @enderror"
-                                placeholder="Email" required>
+                                placeholder="Email">
                                  @error('email2')
-                                 <div class="invalid-feedback">
+                                 <div class="invalid-feedback text-center">
                                     {{ $message }}
                                  </div>
                                 @enderror
@@ -192,7 +192,7 @@
                                 id="KartuPelajarAnggota2 formFileMultiple"
                                 class="myInputFile width-90 form-control bg-transparent @error('image2') is-invalid @enderror" style="color:#a0583a;" required>
                                 @error('image2')
-                                 <div class="invalid-feedback">
+                                 <div class="invalid-feedback text-center">
                                     {{ $message }}
                                  </div>
                                 @enderror
