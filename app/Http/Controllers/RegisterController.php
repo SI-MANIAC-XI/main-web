@@ -25,6 +25,7 @@ class RegisterController extends Controller
         $dataTeam->team_name = $request->get('team_name');
         $dataTeam->school_name = $request->get('school_name');
         $dataTeam->school_address = $request->get('school_address');
+        $dataTeam->school_number = $request->get('school_number');
         
         $dataTeam->save();
         $newIdTeam = $dataTeam->id;
@@ -37,7 +38,7 @@ class RegisterController extends Controller
         $dataMember1->email = $request->get('email');
         
         //Image
-        $imgFolder = "images";
+        $imgFolder = "files";
         $imgFile = time()."_".$request->file('image')->getClientOriginalName();
         $request->file('image')->move($imgFolder, $imgFile);
         $dataMember1->image = $imgFile;

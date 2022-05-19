@@ -27,7 +27,7 @@
                     <input type="hidden" name="{{ 'idAnggota'.$loop->index }}" value="{{ $item->id }}">
                     <div class="col-lg-4 mb-3 daftar-anggota">
                         <div class="row mb-3">
-                            <img src="{{ asset('images/'.$item->image) }}" alt="" width="100%">
+                            <a href="{{ asset('files/'.$item->image) }}">Check Me</a>
                         </div>
                         <div class="row justify-content-between">
                             <div class="col-5">Nama</div>
@@ -44,7 +44,7 @@
                         @if ($team->status != 'accepted')
                         <div class="row mt-3">
                             <label class="text-center label-ganti-kp">Ganti Kartu Pelajar</label>
-                            <input type="file" class="myInputFile" accept="image/*" name="{{ 'imgAnggota'.$loop->index }}" id="imgAnggota2">
+                            <input type="file" class="myInputFile" accept="file_extension|image/*" name="{{ 'imgAnggota'.$loop->index }}" id="imgAnggota2">
                         </div>
                         @endif
                     </div>

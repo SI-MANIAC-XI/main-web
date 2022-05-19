@@ -56,7 +56,9 @@
                         <th scope="col" class="sort" data-sort="status">Status</th>
                         <th scope="col">Peserta</th>
                         <th scope="col" class="sort" data-sort="school_name">Nama Sekolah</th>
-                        <th scope="col">Action</th>
+                        <th scope="col" class="sort" data-sort="school_name">Nama Sekolah</th>
+                        <th scope="col" class="sort" data-sort="school_name">School Address</th>
+                        <th scope="col" class="sort" data-sort="school_name">School Number</th>
                      </tr>
                   </thead>
                   <tbody class="list">
@@ -79,6 +81,8 @@
                               @endforeach
                            </td>
                            <td>{{ $data->school_name }}</td>
+                           <td>{{ $data->school_address }}</td>
+                           <td>{{ $data->school_number }}</td>
                            <td>
                               <a href="#team_{{ $data->id }}" class="btn btn-twitter" data-toggle="modal">Show Detail Verifikasi</a>
                               <form action="{{ url('deleteteam/'.$data->id) }}" method="POST">

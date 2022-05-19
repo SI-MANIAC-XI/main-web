@@ -43,7 +43,7 @@
     <div class="scrollbar-inner">
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
-        <a class="navbar-brand" href="{{ url('/dashboardadmin') }}">
+        <a class="navbar-brand" href="{{ url('/') }}">
           <img src="{{ asset('mainweb/img/logo/logo-maniac-xi.png') }}" class="navbar-brand-img" alt="...">
         </a>
         <div class="ml-auto">

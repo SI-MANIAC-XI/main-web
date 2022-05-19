@@ -19,6 +19,7 @@ class CreateTeamsTable extends Migration
             $table->string('team_name');
             $table->string('school_name');
             $table->string('school_address');
+            $table->string('school_number');
             $table->string('status')->default('pending');
             $table->string('message')->nullable();
             $table->timestamps();

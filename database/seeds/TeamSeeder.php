@@ -12,6 +12,6 @@ class TeamSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('teams')->insert(['account_id'=>'1' ,'team_name' => 'Pasti Menang', 'school_name'=>'Sekolah Jaya', 'school_address'=>'123 Street']);
+        DB::table('teams')->insert(['account_id'=>'1' ,'team_name' => 'Pasti Menang', 'school_name'=>'Sekolah Jaya', 'school_address'=>'123 Street', 'school_number'=>'081222222']);
     }
 }

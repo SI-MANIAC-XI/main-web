@@ -78,13 +78,13 @@ class TeamDetailController extends Controller
         $team['status'] = "pending";
         $team->save();
 
-        $imgFolder = "images";
+        $imgFolder = "files";
 
         if ($request->hasFile('imgAnggota0')) {
             //ImageMember0
             $idMember0 = $request->get('idAnggota0');
             $member0 = TeamDetail::find($idMember0);
-            unlink('images/' . $member0->image);
+            unlink('files/' . $member0->image);
 
             $imgFile = time() . "_" . $request->file('imgAnggota0')->getClientOriginalName();
             $request->file('imgAnggota0')->move($imgFolder, $imgFile);
@@ -97,7 +97,7 @@ class TeamDetailController extends Controller
             //ImageMember1
             $idMember1 = $request->get('idAnggota1');
             $member1 = TeamDetail::find($idMember1);
-            unlink('images/' . $member1->image);
+            unlink('files/' . $member1->image);
 
             $imgFile = time() . "_" . $request->file('imgAnggota1')->getClientOriginalName();
             $request->file('imgAnggota1')->move($imgFolder, $imgFile);
@@ -110,7 +110,7 @@ class TeamDetailController extends Controller
             //ImageMember2
             $idMember2 = $request->get('idAnggota2');
             $member2 = TeamDetail::find($idMember2);
-            unlink('images/' . $member2->image);
+            unlink('files/' . $member2->image);
 
             $imgFile = time() . "_" . $request->file('imgAnggota2')->getClientOriginalName();
             $request->file('imgAnggota2')->move($imgFolder, $imgFile);
