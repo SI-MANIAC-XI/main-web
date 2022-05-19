@@ -78,14 +78,14 @@
                                          </button>
                                       </div>
                                       <div class="modal-body">
-                                        <input type="text" class="form-control" id="txt-message" name="password">
-                                      <div class="modal-footer">
-                                         <form method="POST" action="{{ url('/dashboardadmin/confirm/'.$data->id) }}">
+                                        <form method="POST" action="{{ url('updateAkun/'.$data->id) }}">
                                             @csrf
                                             @method('PUT')
-                                            <input type="hidden" name="status" value="accepted">
+                                            <input type="text" class="form-control" id="txt-message" name="password">
                                             <input type="submit" class="btn btn-facebook my-2" id="btn-accept" value="Update">
                                          </form>
+                                      <div class="modal-footer">
+                                         
                                          <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
                                       </div>
                                    </div>

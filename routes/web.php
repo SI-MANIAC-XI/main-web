@@ -73,4 +73,5 @@ Route::group(['middleware' => 'auth'], function () {
 
 Route::group(['middleware' => 'is_super_admin'], function () {
     Route::get('/dashboardAkun', 'AccountController@index');
+    Route::put('/updateAkun/{account}', 'AccountController@update');
 });

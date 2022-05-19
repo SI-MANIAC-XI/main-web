@@ -6,6 +6,7 @@ use App\Account;
 use App\Team;
 use App\TeamDetail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class TeamController extends Controller
@@ -116,7 +117,15 @@ class TeamController extends Controller
 
    public function TeamDisplay(Account $account)
    {
-      $team = Team::where('account_id', $account->id)->first();
-      return view('teams.dashboard', compact('team'));
+      
+
+      if(Auth::user()->id != $account->id){
+         $team = Team::where('account_id',Auth::user()->id)->first();
+         return view('teams.dashboard', compact('team'));
+      }else{
+         $team = Team::where('account_id', $account->id)->first();
+         return view('teams.dashboard', compact('team'));
+      }
+      
    }
 }

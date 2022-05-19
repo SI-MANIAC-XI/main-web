@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Account;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class AccountController extends Controller
 {
@@ -91,7 +92,9 @@ class AccountController extends Controller
      */
     public function update(Request $request, Account $account)
     {
-        
+        $account['password'] = Hash::make($request->get('password'));
+        $account->save();
+        return redirect()->back()->with('status', 'Password peserta berhasil diubah');
     }
 
     /**
