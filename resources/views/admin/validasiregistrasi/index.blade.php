@@ -106,7 +106,10 @@
                                                    <div class="col-md-4">
                                                       <div class="card">
                                                          <!-- Card image -->
-                                                         <img class="card-img-top" src="{{ asset('images/'.$peserta->image) }}" alt="Gambar Kartu Pelajar Peserta">
+                                                         <a href="{{ asset('files/'.$peserta->image) }}" target="_blank" 
+                                                            style="display:flex; justify-content: center; align-items: center ;width: 50%; height: 40px; 
+                                                            border-radius: 5px; margin: 0 auto; background-color: #1da1f2; color: white;
+                                                            margin-top: 15px">Check Me</a>
                                                          <!-- Card body -->
                                                          <div class="card-body">
                                                             <h5 class="h2 card-title mb-0">{{ $peserta->role }} : {{ $peserta->name }}</h5>

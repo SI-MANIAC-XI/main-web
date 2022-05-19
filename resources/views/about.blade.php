@@ -98,7 +98,7 @@
             <div class="d-flex justify-content-center">
                 <div class="video">
                     <iframe width="500" height="350"
-                        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1" allowfullscreen
+                        src="https://www.youtube.com/embed/vjEuxzl2jzg" allowfullscreen
                         class="embed-responsive-item">
                     </iframe>
                 </div>

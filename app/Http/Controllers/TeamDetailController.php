@@ -76,6 +76,7 @@ class TeamDetailController extends Controller
     public function updateImg(Request $request, Team $team)
     {
         $team['status'] = "pending";
+        $team['message'] = "";
         $team->save();
 
         $imgFolder = "files";

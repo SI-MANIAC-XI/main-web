@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:title" content="MANIAC XI">
     <meta property="og:description" content="MANIAC (Multimedia and Interactive Art Competition) merupakan lomba berbasis multimedia untuk siswa SMA/K sederjat yang mencakup rally, dan design games assets. MANIAC diselenggarakan oleh Program Studi Informatika program Multimedia Universitas Surabaya.">
-    <meta property="og:url" content="https://maniac.ifubaya.id/">
+    <meta property="og:url" content="https://maniac.ifubaya.id">
     <meta property="og:image" content="https://maniac.ifubaya.id/mainweb/img/logo/square-logo.png">
     
     <!-- Bootstrap CSS -->
@@ -54,7 +54,7 @@
                         </div>
                         <div class="col-12 mt-4 fs-3">Contact Person</div>
                         <div class="col-12"><i class="bi bi-whatsapp myIcon"></i> Meliyana : <a href="https://wa.me/+6282255940933" class="wa-num" target="_blank">082255940933</a></div>
-                        <div class="col-12"><i class="bi bi-whatsapp myIcon"></i> Alfian Dwi : <a href="https://wa.me/+6287855956975" class="wa-num" target="_blank">087855956975</a></div>
+                        <div class="col-12"><i class="bi bi-whatsapp myIcon"></i> Ian Wahyudi : <a href="https://wa.me/+6287855956975" class="wa-num" target="_blank">087855956975</a></div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">

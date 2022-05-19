@@ -27,7 +27,7 @@
                     <input type="hidden" name="{{ 'idAnggota'.$loop->index }}" value="{{ $item->id }}">
                     <div class="col-lg-4 mb-3 daftar-anggota">
                         <div class="row mb-3">
-                            <a href="{{ asset('files/'.$item->image) }}">Check Me</a>
+                            <a href="{{ asset('files/'.$item->image) }}" class="btn myBtn" target="_blank" style="width: 80%; margin: 0 auto;">Check Me</a>
                         </div>
                         <div class="row justify-content-between">
                             <div class="col-5">Nama</div>
@@ -53,10 +53,12 @@
                 <div class="row mt-3">
                     <div class="col-lg-12 text-center d-flex flex-column justify-content-center align-items-center">
                         <h3>Status</h3>
+                        @if ($team->status != 'accepted')
                         <h4 class="status ditolak" style="font-weight: 700; text-transform: uppercase;">{{ $team->status }}</h4>
                         <p class="keterangan">{{ $team->message }}</p>
-                        @if ($team->status != 'accepted')
-                        <button type="submit" class="btn myBtn">Simpan Perubahan</button>
+                        <button type="submit" class="btn myBtn dark">Simpan Perubahan</button>
+                        @else
+                        <h4 class="status diterima" style="font-weight: 700; text-transform: uppercase;">{{ $team->status }}</h4>
                         @endif
                     </div>
                 </div>

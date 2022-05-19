@@ -53,7 +53,7 @@ class RegisterController extends Controller
         $dataMember2->email = $request->get('email1');
         
         //Image
-        $imgFolder = "images";
+        $imgFolder = "files";
         $imgFile = time()."_".$request->file('image1')->getClientOriginalName();
         $request->file('image1')->move($imgFolder, $imgFile);
         $dataMember2->image = $imgFile;
@@ -68,13 +68,13 @@ class RegisterController extends Controller
         $dataMember3->email = $request->get('email2');
         
         //Image
-        $imgFolder = "images";
+        $imgFolder = "files";
         $imgFile = time()."_".$request->file('image2')->getClientOriginalName();
         $request->file('image2')->move($imgFolder, $imgFile);
         $dataMember3->image = $imgFile;
 
         $dataMember3->save();
 
-        return redirect('/');
+        return redirect('/login');
     }
 }
