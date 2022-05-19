@@ -120,7 +120,7 @@
         <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
         <div class="accordion-body color-inside-faq faq-radialGradient-inside">
             <ul>
-                <li>Website Maniacubaya.com</li>
+                <li>Website: maniac.ifubaya.id</li>
                 <li>IG: maniac_ubaya</li>
                 <li>OA Line: @994nxsfr</li>
                 <li>Email: maniac.ubayaa@gmail.com</li>

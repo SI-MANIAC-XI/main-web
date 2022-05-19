@@ -117,7 +117,7 @@
             <div class="row px-2 mx-5">
               <div class="col py-5 px-3">
                 <div class="d-flex justify-content-center">
-                    <img src="{{ asset('../mainweb/img/bg-coklat.jpg') }}" alt="" class="rounded-circle" width="110" height="110">
+                    <img src="{{ asset('../mainweb/img/icon/Mahkota_1.png') }}" alt="Juara 1" width="100">
                 </div>
                 <div class="d-flex justify-content-center my-2 fs-3" style="color: #ECEECA">Juara 1</div>
                 <div class="d-flex justify-content-center my-2 fw-bolder fs-3" style="color: #FAE14D">Rp 5.000.000</div>
@@ -127,7 +127,7 @@
               </div>
               <div class="col py-5 px-3">
                 <div class="d-flex justify-content-center">
-                    <img src="{{ asset('../mainweb/img/bg-coklat.jpg') }}" alt="" class="rounded-circle" width="110" height="110">
+                    <img src="{{ asset('../mainweb/img/icon/Mahkota_2.png') }}" alt="Juara 1" width="100">
                 </div>
                 <div class="d-flex justify-content-center my-2 fs-3" style="color: #ECEECA">Juara 2</div>
                 <div class="d-flex justify-content-center my-2 fw-bolder fs-3" style="color: #FAE14D">Rp 3.000.000</div>
@@ -137,7 +137,7 @@
               </div>
               <div class="col py-5 px-3">
                 <div class="d-flex justify-content-center">
-                    <img src="{{ asset('../mainweb/img/bg-coklat.jpg') }}" alt="" class="rounded-circle" width="110" height="110">
+                    <img src="{{ asset('../mainweb/img/icon/Mahkota_3.png') }}" alt="Juara 1" width="100">
                 </div>
                 <div class="d-flex justify-content-center my-2 fs-3" style="color: #ECEECA">Juara 3</div>
                 <div class="d-flex justify-content-center my-2 fw-bolder fs-3" style="color: #FAE14D">Rp 1.000.000</div>
