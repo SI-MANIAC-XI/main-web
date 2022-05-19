@@ -37,7 +37,7 @@
             @if (auth()->check())
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Welcome {{ auth()->user()->username }}</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                @if (auth()->user()->is_admin > "1")
+                @if (auth()->user()->is_admin >= "1")
                 <li>
                   <a class="dropdown-item" href="{{ url('/dashboardadmin') }}">Dashboard</a> 
                 </li>  
