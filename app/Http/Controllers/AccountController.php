@@ -15,7 +15,8 @@ class AccountController extends Controller
      */
     public function index()
     {
-        //
+        $result = Account::latest()->paginate(6);
+        return view('admin.accountdata.index', compact('result'));
     }
 
     public function authenticate(Request $request){
@@ -90,7 +91,7 @@ class AccountController extends Controller
      */
     public function update(Request $request, Account $account)
     {
-        //
+        
     }
 
     /**

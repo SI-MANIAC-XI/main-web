@@ -72,5 +72,5 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 Route::group(['middleware' => 'is_super_admin'], function () {
-    Route::get('/dashboardAkun', 'TeamController@TeamDisplay');
+    Route::get('/dashboardAkun', 'AccountController@index');
 });
