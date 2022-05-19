@@ -14,16 +14,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link{{ request()->is('/') ? ' active' : '' }}" href="/">Home</a>
+            <a class="nav-link{{ request()->is('/') ? ' active' : '' }}" href="{{ url('/') }}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link{{ request()->is('about') ? ' active' : '' }}" href="/about">About Us</a>
+            <a class="nav-link{{ request()->is('about') ? ' active' : '' }}" href="{{ url('/about') }}">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link{{ request()->is('competition') ? ' active' : '' }}" href="/competition">Competition</a>
+            <a class="nav-link{{ request()->is('competition') ? ' active' : '' }}" href="{{ url('/competition') }}">Competition</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link{{ request()->is('faq') ? ' active' : '' }}" href="/faq">FAQ</a>
+            <a class="nav-link{{ request()->is('faq') ? ' active' : '' }}" href="{{ url('/faq') }}">FAQ</a>
           </li>
           @auth
           @if(auth()->user()->is_admin == "0")
@@ -39,7 +39,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 @if (auth()->user()->is_admin > "1")
                 <li>
-                  <a class="dropdown-item" href="/dashboardadmin">Dashboard</a> 
+                  <a class="dropdown-item" href="{{ url('/dashboardadmin') }}">Dashboard</a> 
                 </li>  
                 @endif
                 <li>
@@ -53,12 +53,10 @@
             @else
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="/login">Login</a></li>
-                <li><a class="dropdown-item" href="/register">Register</a></li>
+                <li><a class="dropdown-item" href="{{ url('/login') }}">Login</a></li>
+                <li><a class="dropdown-item" href="{{ url('/register')}}">Register</a></li>
               </ul>
             @endif
-           
-            
           </li>
         </ul>
       </div>

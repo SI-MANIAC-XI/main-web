@@ -34,7 +34,7 @@
                         <button class="btn myBtn width-90" type="submit">Login</button>
                     </form>
                     <div class="row justify-content-center">
-                        <p class="text-center have-account">Don't have an account yet? <a href="/register">Register</a></p>
+                        <p class="text-center have-account">Don't have an account yet? <a href="{{ url('/register') }}">Register</a></p>
                     </div>
                 </div>
             </div>

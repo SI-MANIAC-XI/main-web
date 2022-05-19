@@ -20,7 +20,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="d-flex justify-content-center mt-4 hadiah text-center">WIN UP TO <br>IDR 9 MILLION </div>
-                <a href="/register" class="btn custom-btn custom-btn-bg">REGISTER NOW</a>    
+                <a href="{{ url('/register') }}" class="btn custom-btn custom-btn-bg">REGISTER NOW</a>    
             </div>
         </div>
     </div>
@@ -100,7 +100,8 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 d-flex mt-3">
-                        <a href="mainweb/img/poster/poster.png" target="blank"><img style="width:100%; height:100%; object-fit: contain;" src="{{asset('../mainweb/img/poster/poster.png')}}" alt="poster"></a>
+                       
+                        <a href="{{ asset('mainweb/img/poster/poster.png') }}" target="blank"><img style="width:100%; height:100%; object-fit: contain;" src="{{asset('../mainweb/img/poster/poster.png')}}" alt="poster"></a>
                     </div>
                 </div>
 			</div>
