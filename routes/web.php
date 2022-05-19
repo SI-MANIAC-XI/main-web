@@ -70,3 +70,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard/{account}', 'TeamController@TeamDisplay');
     Route::put('/updateteam/{team}', 'TeamDetailController@updateImg');
 });
+
+Route::group(['middleware' => 'is_super_admin'], function () {
+    Route::get('/dashboardAkun', 'TeamController@TeamDisplay');
+});

@@ -17,7 +17,7 @@ class CreateAccountsTable extends Migration
             $table->id();
             $table->string('username')->unique();
             $table->string('password');
-            $table->boolean('is_admin')->default(false);
+            $table->integer('is_admin')->default(false);
             $table->timestamps();
         });
     }

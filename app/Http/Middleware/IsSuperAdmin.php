@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
-class IsAdmin
+class IsSuperAdmin
 {
     /**
      * Handle an incoming request.
@@ -16,7 +16,7 @@ class IsAdmin
      */
     public function handle($request, Closure $next)
     {
-        if(!Auth::check() || Auth::user()->is_admin <= 1){
+        if(!Auth::check() || Auth::user()->is_admin != 2){
             abort(403);
         }
         return $next($request);
