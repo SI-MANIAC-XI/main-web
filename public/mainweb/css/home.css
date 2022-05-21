@@ -1,6 +1,33 @@
 .prize-container {
     border-radius: 50px;
-    background-color: #aa8561;
+    background-color: #E5C173;
+}
+
+.dot {
+    height: 125px;
+    width: 125px;
+    background-color: #ECEECA;
+    border-radius: 50%;
+    display: inline-block;
+} 
+
+.crown{
+    margin: 38px 12px;
+}
+
+.prize1{
+    border-radius: 30px;
+    background-color: #A0583A;
+    text-align: center;
+    margin-left: 3px;
+}
+
+.neon{
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 28px yellow,
+    0 0 50px rgba(255, 120, 0, 0.5);
+  -webkit-text-stroke: 1px white;
 }
 
 .video {

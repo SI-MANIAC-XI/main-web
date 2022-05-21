@@ -112,53 +112,82 @@
 <!-- end timeline -->
 
 
-    <div class="container mt-4">
-        <div class="d-flex justify-content-center my-5 fs-1 myTitle" style="color: #A0583A">PRIZES</div>
-        <div class="prize-container">
-            <div class="row px-2 mx-5">
-              <div class="col py-5 px-3">
-                <div class="d-flex justify-content-center">
-                    <img src="{{ asset('../mainweb/img/icon/Mahkota_1.png') }}" alt="Juara 1" width="100">
-                </div>
-                <div class="d-flex justify-content-center my-2 fs-3" style="color: #ECEECA">Juara 1</div>
-                <div class="d-flex justify-content-center my-2 fw-bolder fs-3" style="color: #FAE14D">Rp 5.000.000</div>
-                <div class="text-center fs-6" style="color: #ECEECA">
-                    Potongan USP sebesar 100% ( Jika masuk Jurusan Teknik Informatika Program Kekhususan Multimedia ) Piala MANIAC + Sertifikat
-                </div>
-              </div>
-              <div class="col py-5 px-3">
-                <div class="d-flex justify-content-center">
-                    <img src="{{ asset('../mainweb/img/icon/Mahkota_2.png') }}" alt="Juara 1" width="100">
-                </div>
-                <div class="d-flex justify-content-center my-2 fs-3" style="color: #ECEECA">Juara 2</div>
-                <div class="d-flex justify-content-center my-2 fw-bolder fs-3" style="color: #FAE14D">Rp 3.000.000</div>
-                <div class="text-center fs-6" style="color: #ECEECA">
-                    Potongan USP sebesar 50% ( Jika masuk Jurusan Teknik Informatika Program Kekhususan Multimedia ) Piala MANIAC + Sertifikat
-                </div>
-              </div>
-              <div class="col py-5 px-3">
-                <div class="d-flex justify-content-center">
-                    <img src="{{ asset('../mainweb/img/icon/Mahkota_3.png') }}" alt="Juara 1" width="100">
-                </div>
-                <div class="d-flex justify-content-center my-2 fs-3" style="color: #ECEECA">Juara 3</div>
-                <div class="d-flex justify-content-center my-2 fw-bolder fs-3" style="color: #FAE14D">Rp 1.000.000</div>
-                <div class="text-center fs-6" style="color: #ECEECA">
-                    Potongan USP sebesar 25% ( Jika masuk Jurusan Teknik Informatika Program Kekhususan Multimedia ) Piala MANIAC + Sertifikat
-                </div>
-              </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="d-flex justify-content-center my-5 fs-1 myTitle text-center" style="color: #A0583A">JOIN US NOW</div>
+<div class="container mt-4 px-5">
+    <div class="d-flex justify-content-center my-5 fs-1 myTitle" style="color: #A0583A">PRIZES</div>
+    <div class="prize-container">
+        <div class="row px-5 mx-4 ">
+            <div class="col-3 me-4 mt-5 py-3 px-3 prize1">
             <div class="d-flex justify-content-center">
-                <div class="video">
-                    <iframe width="500" height="350" src="https://www.youtube.com/embed/vjEuxzl2jzg" allowfullscreen class="embed-responsive-item">
-                    </iframe>
+                <span class="dot">
+                    <img class= "crown" src="{{ asset('../mainweb/img/icon/Mahkota_1.png') }}" alt="Juara 1" width="100">
+                </span>
+            </div>
+            <div class="d-flex justify-content-center fs-3" style="color: #FFFFFF"><b>Juara 1</b></div>
+            <div class="d-flex justify-content-center fw-bolder fs-3 neon">Rp 5.000.000</div>
+            <div class="text-center fs-5" style="color: #ECEECA">
+                Potongan USP sebesar 100%*
+            </div>
+            </div>
+
+            <div class="col-3 mx-5 mt-5 py-3 px-3 prize1">
+                <div class="d-flex justify-content-center">
+                    <span class="dot">
+                        <img class= "crown" src="{{ asset('../mainweb/img/icon/Mahkota_2.png') }}" alt="Juara 2" width="100">
+                    </span>
                 </div>
+                <div class="d-flex justify-content-center fs-3" style="color: #FFFFFF"><b>Juara 2</b></div>
+                <div class="d-flex justify-content-center fw-bolder fs-3 neon">Rp 3.000.000</div>
+                <div class="text-center fs-5" style="color: #ECEECA">
+                    Potongan USP sebesar 50%*
+                </div>
+            </div>
+
+            <div class="col-3 mx-5 mt-5 py-3 px-3 prize1">
+                <div class="d-flex justify-content-center">
+                    <span class="dot">
+                        <img class= "crown" src="{{ asset('../mainweb/img/icon/Mahkota_3.png') }}" alt="Juara 3" width="100">
+                    </span>
+                </div>
+                <div class="d-flex justify-content-center fs-3" style="color: #FFFFFF"><b>Juara 3</b></div>
+                <div class="d-flex justify-content-center fw-bolder fs-3 neon">Rp 1.000.000</div>
+                <div class="text-center fs-5" style="color: #ECEECA">
+                    Potongan USP sebesar 25%*
+                </div>
+            </div>
+
+            {{-- keterangan tambahan --}}
+            <div>
+                <div>
+                <p class="my-3 fs-6">
+                    *) Setiap pemenang akan mendapatkan <strong>Piala + Sertifikat</strong>
+                </p>
+            </div>
+
+            <div class="mb-3 pt-3 px-5 d-flex justify-content-center fs-5 prize1" style="color: #FFFFFF">
+                <p class="px-3">
+                    <strong>*) USP berlaku jika </strong> masuk Jurusan Teknik Informatika <strong>Program Multimedia Universitas Surabaya</strong>
+                </p>
+            </div>
+
+            <div>
+                <p class="mb-5 fs-6">
+                    <strong>1 Tim terdiri atas 3 orang dari SMA/SMK yang sama</strong>
+                </p>
+            </div>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="d-flex justify-content-center my-5 fs-1 myTitle text-center" style="color: #A0583A">JOIN US NOW</div>
+        <div class="d-flex justify-content-center">
+            <div class="video">
+                <iframe width="500" height="350" src="https://www.youtube.com/embed/vjEuxzl2jzg" allowfullscreen class="embed-responsive-item">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 
 @section('script')
