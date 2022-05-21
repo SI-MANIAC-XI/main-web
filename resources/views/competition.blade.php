@@ -15,13 +15,16 @@
             <div class="compe-container text-center">
                 <h5 class="card-title mb-0 fs-4">RALLY GAMES</h5>
                 <div class="card-body mb-5">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, saepe ducimus architecto commodi eveniet, ratione asperiores nobis consequuntur nostrum quo exercitationem veniam! Totam deserunt enim quia aliquid consectetur! Assumenda, necessitatibus? Autem consectetur illo odit voluptates sunt, explicabo sapiente expedita! Voluptate soluta enim, sapiente neque odit voluptatibus ullam, aliquam doloribus illum eveniet eius porro, corporis deleniti possimus eligendi sequi voluptatem blanditiis totam rem dignissimos distinctio maiores illo. Officiis reiciendis velit excepturi pariatur nemo debitis dolorum magni?</p>
+                    <p>Rally Games terdiri dari dua jenis pos, yaitu pos single dan battle. Pada pos single, setiap tim harus bisa bekerja sama dan berpikir untuk menyelesaikan permainan yang ada. Pada pos battle, setiap tim harus bisa membangun strategi dan kompak dalam berkompetisi dengan tim lain. Terdapat pula pos bonus bernama pos Dungeon. Pada pos ini, setiap tim peserta akan menjawab pertanyaan secara teori mengenai game dan multimedia dasar, serta pertanyaan logika.</p>
                 </div>
             </div>
             <div class="compe-container text-center mb-5">
                 <h5 class="card-title mb-0 fs-4">FINAL</h5>
                 <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae qui obcaecati aperiam totam ipsam est, debitis praesentium beatae distinctio sequi minus, perspiciatis adipisci quidem cupiditate facere voluptatem. Et, alias debitis illo est eligendi perferendis placeat magnam commodi, expedita a suscipit adipisci cupiditate cum saepe incidunt, quisquam fugit culpa voluptates repellat accusamus! Laboriosam et, porro quasi doloremque necessitatibus neque excepturi pariatur at consequuntur, fuga placeat corporis, enim laudantium impedit dolore voluptatibus nulla sapiente perspiciatis a atque!</p>
+                    <p>Topik yang akan dilombakan pada babak final adalah Game Concept Design dan Game Asset Design. <br><br>
+                        Game Concept Design adalah cabang lomba untuk membuat sebuah konsep cerita atau alur dalam sebuah game. Peserta diharapkan dapat membuat konsep game yang dapat menjadi solusi dari kasus yang akan ditentukan nantinya. <br><br>
+                        Game Asset Desain adalah cabang lomba untuk mendesain asset-asset yang dibutuhkan dalam game tersebut. Peserta diharapkan dapat mendesain asset game semenarik mungkin sesuai dengan alur dan konsep yang telah dibuat. <br><br>
+                        Setiap tim akan mempresentasikan hasil kerjanya pada babak Final. Peserta harus bisa memberikan penjelasan mengenai konsep game beserta assetnya</p>
                 </div>
             </div>
         </div>
