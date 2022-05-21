@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="d-flex justify-content-center mt-4 hadiah text-center">WIN UP TO <br>IDR 9 MILLION </div>
+                <div class="d-flex justify-content-center mt-4 hadiah text-center">WIN UP TO <br>IDR 100+ MILLION </div>
                 <a href="{{ url('/register') }}" class="btn custom-btn custom-btn-bg">REGISTER NOW</a>    
             </div>
         </div>
