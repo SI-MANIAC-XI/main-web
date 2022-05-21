@@ -112,7 +112,7 @@
                                 </div>
                             @enderror
                             <label class="myLabel">Kartu Pelajar</label>
-                            <input type="file" accept="file_extension|image/*" name="image"
+                            <input type="file" accept="application/pdf,image/*" name="image"
                                 id="KartuPelajarKetua formFileMultiple"
                                 class="myInputFile width-90 form-control bg-transparent @error('image') is-invalid @enderror"
                                 style="color:#a0583a;" required>
@@ -151,7 +151,7 @@
                                 </div>
                                 @enderror
                             <label class="myLabel">Kartu Pelajar</label>
-                            <input type="file" accept="file_extension|image/*" name="image1"
+                            <input type="file" accept="application/pdf,image/*" name="image1"
                                 id="KartuPelajarAnggota1 formFileMultiple"
                                 class="myInputFile width-90 form-control bg-transparent" style="color:#a0583a;" required>
                                 @error('image1')
@@ -188,7 +188,7 @@
                                  </div>
                                 @enderror
                             <label class="myLabel">Kartu Pelajar</label>
-                            <input type="file" accept="file_extension|image/*" name="image2"
+                            <input type="file" accept="application/pdf,image/*" name="image2"
                                 id="KartuPelajarAnggota2 formFileMultiple"
                                 class="myInputFile width-90 form-control bg-transparent @error('image2') is-invalid @enderror" style="color:#a0583a;" required>
                                 @error('image2')

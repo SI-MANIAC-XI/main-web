@@ -75,6 +75,12 @@ class TeamDetailController extends Controller
 
     public function updateImg(Request $request, Team $team)
     {
+        $request->validate([
+            'imgAnggota0' => ['required','mimes:jpeg,bmp,png,jpg,svg,pdf','max:1000'],
+            'imgAnggota1' => ['required','mimes:jpeg,bmp,png,jpg,svg,pdf','max:1000'],
+            'imgAnggota2' => ['required','mimes:jpeg,bmp,png,jpg,svg,pdf','max:1000']
+        ]);
+
         $team['status'] = "pending";
         $team['message'] = "";
         $team->save();
