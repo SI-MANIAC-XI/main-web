@@ -153,11 +153,11 @@
                             <label class="myLabel">Kartu Pelajar</label>
                             <input type="file" accept="application/pdf,image/*" name="image1"
                                 id="KartuPelajarAnggota1 formFileMultiple"
-                                class="myInputFile width-90 form-control bg-transparent" style="color:#a0583a;">
+                                class="myInputFile width-90 form-control bg-transparent @error('image1') is-invalid @enderror" style="color:#a0583a;">
                                 @error('image1')
-                                <div class="invalid-feedback text-center">
+                                 <div class="invalid-feedback text-center">
                                     {{ $message }}
-                                </div>
+                                 </div>
                                 @enderror
                         </div>
 
