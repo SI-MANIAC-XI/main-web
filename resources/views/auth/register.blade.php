@@ -115,7 +115,7 @@
                             <input type="file" accept="application/pdf,image/*" name="image"
                                 id="KartuPelajarKetua formFileMultiple"
                                 class="myInputFile width-90 form-control bg-transparent @error('image') is-invalid @enderror"
-                                style="color:#a0583a;" required>
+                                style="color:#a0583a;">
                             @error('image')
                                 <div class="invalid-feedback text-center">
                                     {{ $message }}
@@ -153,7 +153,7 @@
                             <label class="myLabel">Kartu Pelajar</label>
                             <input type="file" accept="application/pdf,image/*" name="image1"
                                 id="KartuPelajarAnggota1 formFileMultiple"
-                                class="myInputFile width-90 form-control bg-transparent" style="color:#a0583a;" required>
+                                class="myInputFile width-90 form-control bg-transparent" style="color:#a0583a;">
                                 @error('image1')
                                 <div class="invalid-feedback text-center">
                                     {{ $message }}
@@ -190,7 +190,7 @@
                             <label class="myLabel">Kartu Pelajar</label>
                             <input type="file" accept="application/pdf,image/*" name="image2"
                                 id="KartuPelajarAnggota2 formFileMultiple"
-                                class="myInputFile width-90 form-control bg-transparent @error('image2') is-invalid @enderror" style="color:#a0583a;" required>
+                                class="myInputFile width-90 form-control bg-transparent @error('image2') is-invalid @enderror" style="color:#a0583a;">
                                 @error('image2')
                                  <div class="invalid-feedback text-center">
                                     {{ $message }}
