@@ -55,7 +55,7 @@
                             </div>
                             <div style="display: flex; flex-direction:column;">
                                 <div class="timeline-info">                         
-                                    <br><small>20 Mei 2022</small>
+                                    <br><small>23 Mei 2022</small>
                                     <h4><span>Open Registration</span></h4>
                                 </div>
                             </div>

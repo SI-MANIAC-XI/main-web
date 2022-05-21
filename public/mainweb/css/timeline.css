@@ -40,7 +40,7 @@
 }
 
 .timeline-yr span {
-  color: #FAE14D;
+  color: #eceeca;
   font-size: 16px;
   font-weight: bold;
   display: block;
@@ -86,7 +86,7 @@
 }
 @media (max-width: 430px) {
   .timeline-yr span {
-    color: #FAE14D;
+    color: #eceeca;
     font-size: 16px;
     font-weight: bold;
     display: block;
