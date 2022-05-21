@@ -84,7 +84,7 @@
                         <img src="{{ asset("../mainweb/img/maskot/cewek maskot.png") }}" alt="Maskot Wanita" class="maskot" width="60%">
                     </div>
                     <div class="col-lg-8">
-                        <p class="mb-0"><strong>MANIAC (Multimedia and Interactive Art Competition)</strong> merupakan lomba berbasis multimedia untuk siswa SMA/K sederjat yang mencakup rally, dan design games assets. MANIAC diselenggarakan oleh Program Studi Informatika program Multimedia Universitas Surabaya.</p>
+                        <p class="mb-0"><strong>MANIAC (Multimedia and Interactive Art Competition)</strong> merupakan lomba berbasis multimedia untuk siswa SMA/K sederjat yang mencakup rally, game concept design, dan game asset design. MANIAC diselenggarakan oleh Program Studi Informatika program Multimedia Universitas Surabaya.</p>
                     </div>
                     <div class="col-lg-2">
                         <img src="{{ asset("../mainweb/img/maskot/cowok maskot.png") }}" alt="Maskot Pria" class="maskot" width="60%">
@@ -98,7 +98,7 @@
             <div class="d-flex justify-content-center">
                 <div class="video">
                     <iframe width="500" height="350"
-                        src="https://www.youtube.com/embed/vjEuxzl2jzg" allowfullscreen
+                        src="https://www.youtube.com/embed/GAwwDNwLEXE" allowfullscreen
                         class="embed-responsive-item">
                     </iframe>
                 </div>

@@ -111,17 +111,17 @@
                                     {{ $message }}
                                 </div>
                             @enderror
-                            <label class="myLabel">Kartu Pelajar</label>
+                            <label class="myLabel">Kartu Pelajar (Max 1 MB)</label>
                             <input type="file" accept="application/pdf,image/*" name="image"
                                 id="KartuPelajarKetua formFileMultiple"
-                                class="myInputFile width-90 form-control bg-transparent @error('image') is-invalid @enderror"
+                                class="myInputFile width-90 @error('image') is-invalid @enderror"
                                 style="color:#a0583a;">
                             @error('image')
                                 <div class="invalid-feedback text-center">
                                     {{ $message }}
                                 </div>
                             @enderror
-                            <p style="margin-left: 5%; margin-top: 0;">Format: Nama Tim_Nama Anggota</p>
+                            <p style="margin-left: 5%; margin-top: 0;">Format: Nama Tim_Nama</p>
                         </div>
 
                         <div class="data-anggota anggota-1">
@@ -150,15 +150,16 @@
                                     {{ $message }}
                                 </div>
                                 @enderror
-                            <label class="myLabel">Kartu Pelajar</label>
+                            <label class="myLabel">Kartu Pelajar (Max 1 MB)</label>
                             <input type="file" accept="application/pdf,image/*" name="image1"
                                 id="KartuPelajarAnggota1 formFileMultiple"
-                                class="myInputFile width-90 form-control bg-transparent @error('image1') is-invalid @enderror" style="color:#a0583a;">
+                                class="myInputFile width-90 @error('image1') is-invalid @enderror" style="color:#a0583a;">
                                 @error('image1')
                                  <div class="invalid-feedback text-center">
                                     {{ $message }}
                                  </div>
                                 @enderror
+                                <p style="margin-left: 5%; margin-top: 0;">Format: Nama Tim_Nama</p>
                         </div>
 
                         <div class="data-anggota anggota-2">
@@ -187,15 +188,16 @@
                                     {{ $message }}
                                  </div>
                                 @enderror
-                            <label class="myLabel">Kartu Pelajar</label>
+                            <label class="myLabel">Kartu Pelajar (Max 1 MB)</label>
                             <input type="file" accept="application/pdf,image/*" name="image2"
                                 id="KartuPelajarAnggota2 formFileMultiple"
-                                class="myInputFile width-90 form-control bg-transparent @error('image2') is-invalid @enderror" style="color:#a0583a;">
+                                class="myInputFile width-90 @error('image2') is-invalid @enderror" style="color:#a0583a;">
                                 @error('image2')
                                  <div class="invalid-feedback text-center">
                                     {{ $message }}
                                  </div>
                                 @enderror
+                                <p style="margin-left: 5%; margin-top: 0;">Format: Nama Tim_Nama</p>
                         </div>
 
                         <button class="btn myBtn width-90 mt-5" type="submit">Register</button>

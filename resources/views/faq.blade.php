@@ -20,7 +20,7 @@
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
         <div class="accordion-body color-inside-faq faq-radialGradient-inside">
-        <strong>MANIAC (Multimedia and Interactive Art Competition)</strong> merupakan lomba berbasis multimedia untuk siswa SMA/K sederjat yang mencakup rally, dan design games assets. MANIAC diselenggarakan oleh Program Studi Informatika program Multimedia Universitas Surabaya.
+        <strong>MANIAC (Multimedia and Interactive Art Competition)</strong> merupakan lomba berbasis multimedia untuk siswa SMA/K sederjat yang mencakup rally, game concept design, dan game asset design. MANIAC diselenggarakan oleh Program Studi Informatika program Multimedia Universitas Surabaya.
         </div>
         </div>
     </div>
