@@ -45,10 +45,10 @@
                         @if ($team->status != 'accepted')
                            <div class="row mt-3">
                               <label class="text-center label-ganti-kp">Ganti Kartu Pelajar</label>
-                              <input type="file" class="myInputFile @error("{{ 'imgAnggota'.$loop->index }}") is-invalid @enderror" accept="application/pdf,image/*" name="{{ 'imgAnggota'.$loop->index }}" id="imgAnggota2">
-                              
+                              <input type="file" class="myInputFile @error('{{ "imgAnggota".$loop->index }}') is-invalid @enderror" 
+                              accept="application/pdf,image/*" name="{{ 'imgAnggota'.$loop->index }}" id="imgAnggota2">
                            </div>
-                           @error("{{ 'imgAnggota'.$loop->index }}")
+                           @error('{{ "imgAnggota".$loop->index }}')
                               <div class="invalid-feedback text-center">
                                  {{ $message }}
                               </div>
