@@ -21,16 +21,16 @@ class RegisterController extends Controller
          'school_number' => ['required','max:45'],
          'name' => ['required','max:45'],
          'phone_number' => ['required','max:45'],
-         'image' => ['required','max:1000'],
+         'image' => ['required','max:1024'],
          'email' => ['required','max:45','email:dns'],
          'name1' => ['required','max:45'],
          'phone_number1' => ['required','max:45'],
-         'image1' => ['required','max:1000'],
+         'image1' => ['required','max:1024'],
          'email1' => ['required','max:45','email:dns'],
          'name2' => ['required','max:45'],
          'phone_number2' => ['required','max:45'],
          'email2' => ['required','max:45','email:dns'],
-         'image2' => ['required','max:1000']
+         'image2' => ['required','max:1024']
       ]);
 
       $dataAccount = new Account();

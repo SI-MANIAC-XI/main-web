@@ -76,9 +76,9 @@ class TeamDetailController extends Controller
     public function updateImg(Request $request, Team $team)
     {
         $request->validate([
-            'imgAnggota0' => ['max:1000'],
-            'imgAnggota1' => ['max:1000'],
-            'imgAnggota2' => ['max:1000']
+            'imgAnggota0' => ['max:1024'],
+            'imgAnggota1' => ['max:1024'],
+            'imgAnggota2' => ['max:1024']
         ]);
 
         $team['status'] = "pending";
