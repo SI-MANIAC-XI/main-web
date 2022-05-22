@@ -179,7 +179,7 @@
             </div>
 
             <div class="mb-3 pt-3 px-4 d-flex justify-content-center fs-5 prize1" style="color: #FFFFFF">
-                <p class="px-3">
+                <p>
                     <strong>*) USP berlaku jika </strong> masuk Jurusan Teknik Informatika <strong>Program Multimedia Universitas Surabaya</strong>
                 </p>
             </div>
