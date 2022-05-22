@@ -130,8 +130,8 @@
 <div class="container mt-4 px-5">
     <div class="d-flex justify-content-center my-5 fs-1 myTitle" style="color: #A0583A">PRIZES</div>
     <div class="prize-container">
-        <div class="row px-5 mx-4 ">
-            <div class="col-3 me-4 mt-5 py-3 px-3 prize1">
+        <div class="row px-2 mx-4 justify-content-around">
+            <div class="col-md-3 mt-5 py-3 px-3 prize1">
             <div class="d-flex justify-content-center">
                 <span class="dot">
                     <img class= "crown" src="{{ asset('../mainweb/img/icon/Mahkota_1.png') }}" alt="Juara 1" width="100">
@@ -144,7 +144,7 @@
             </div>
             </div>
 
-            <div class="col-3 mx-5 mt-5 py-3 px-3 prize1">
+            <div class="col-md-3 mt-5 py-3 px-3 prize1">
                 <div class="d-flex justify-content-center">
                     <span class="dot">
                         <img class= "crown" src="{{ asset('../mainweb/img/icon/Mahkota_2.png') }}" alt="Juara 2" width="100">
@@ -157,7 +157,7 @@
                 </div>
             </div>
 
-            <div class="col-3 mx-5 mt-5 py-3 px-3 prize1">
+            <div class="col-md-3 mt-5 py-3 px-3 prize1">
                 <div class="d-flex justify-content-center">
                     <span class="dot">
                         <img class= "crown" src="{{ asset('../mainweb/img/icon/Mahkota_3.png') }}" alt="Juara 3" width="100">
@@ -178,7 +178,7 @@
                 </p>
             </div>
 
-            <div class="mb-3 pt-3 px-5 d-flex justify-content-center fs-5 prize1" style="color: #FFFFFF">
+            <div class="mb-3 pt-3 px-4 d-flex justify-content-center fs-5 prize1" style="color: #FFFFFF">
                 <p class="px-3">
                     <strong>*) USP berlaku jika </strong> masuk Jurusan Teknik Informatika <strong>Program Multimedia Universitas Surabaya</strong>
                 </p>
