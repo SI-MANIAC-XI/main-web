@@ -84,6 +84,12 @@ iframe {
     text-align: center;
 }
 
+@media(min-width: 768px){
+    .col-md-4 {
+        width: 30% !important;
+    }
+}
+
 @media (max-width: 426px) {
     .caption {
         font-size: 1.5em;
