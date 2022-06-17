@@ -263,7 +263,7 @@
                                     hingga Babak Final</li>
                                 <li>Registrasi dilakukan oleh salah satu perwakilan TIM.</li>
                                 <li>Tim yang sudah terdaftar dapat mengganti anggota tim <b>paling lambat hingga
-                                        <i>Technical Meeting</i>.</b></li>
+                                    2 minggu sebelum diadakannya <i>Technical Meeting</i> Babak Penyisihan.</b></li>
                                 <li>Setiap peserta MANIAC XI harus mempunyai minimal 1 laptop/komputer dan 1 <i>gadget</i>
                                     (<i>smartphone</i>/tablet/laptop/komputer/dan lainnya), dan mempunyai koneksi internet
                                     yang cukup dan memadai. <br> Catatan: <i>Gadget</i> harus memiliki kamera yang dapat
