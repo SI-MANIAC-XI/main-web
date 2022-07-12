@@ -6,6 +6,7 @@ use App\Account;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class AccountController extends Controller
 {
@@ -22,15 +23,15 @@ class AccountController extends Controller
 
     public function authenticate(Request $request){
         $credentials = $request->validate([
-            'username' => ['required'],
+            'username' => 'required|unique:accounts',
             'password'=>['required']
         ]);
 
         if(Auth::attempt($credentials)){
             $request->session()->regenerate();
-            return redirect('/');
+            return redirect()->intended('/');
         }
-        return redirect('/login');
+        return redirect('/login')->with("loginError",'Username atau Password salah!. Silahkan periksa kembali username atau password anda');
     }
 
     public function logout(Request $request){
