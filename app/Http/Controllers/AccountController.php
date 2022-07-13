@@ -23,8 +23,8 @@ class AccountController extends Controller
 
     public function authenticate(Request $request){
         $credentials = $request->validate([
-            'username' => 'required|unique:accounts',
-            'password'=>['required']
+            'username' => 'required',
+            'password' => 'required'
         ]);
 
         if(Auth::attempt($credentials)){
