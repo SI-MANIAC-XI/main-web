@@ -14,4 +14,8 @@ class TeamDetail extends Model
     {
        return $this->belongsTo('App\Team','team_id');
     }
+
+    public function workshops() {
+        return $this->belongsToMany(Workshop::class, 'team_has_workshop');
+    }
 }

@@ -71,6 +71,7 @@
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
                     <a href="{{ url('/verifikasiteam') }}" class="nav-link">Validasi Registrasi</a>
+                    <a href="{{ url('/pesertaWorkshop') }}" class="nav-link">Peserta Workshop</a>
                     <a href="{{ url('/dashboardAkun') }}" class="nav-link">Account Peserta</a>
                   </li>
                 </ul>

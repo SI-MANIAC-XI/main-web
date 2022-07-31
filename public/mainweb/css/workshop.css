@@ -1,0 +1,13 @@
+.workshop-card {
+    color: #eceeca;
+    /* font-weight: 600; */
+    width: 95%; 
+    padding: 15px; 
+    background-color: #a0583a;
+    border-radius: 15px;
+}
+
+.workshop-container {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}

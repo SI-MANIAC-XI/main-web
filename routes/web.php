@@ -64,11 +64,14 @@ Route::group(['middleware' => 'is_admin'], function () {
       return view('admin.adminwelcome');
    });
    Route::delete('/deleteteam/{team}', 'TeamController@destroy');
+   Route::get('/pesertaWorkshop', 'AdminController@getPesertaWorkshop');
 });
 
 Route::group(['middleware' => 'auth'], function () {
    Route::get('/dashboard/{account}', 'TeamController@TeamDisplay');
    Route::put('/updateteam/{team}', 'TeamDetailController@updateImg');
+   Route::get('/workshop', 'TeamController@displayWorkshop');
+   Route::post('/workshop/insert', 'TeamController@registerWorkshop')->name('register_workshop');
 });
 
 Route::group(['middleware' => 'is_super_admin'], function () {

@@ -108,6 +108,16 @@ body {
     color: #eceeca;
 }
 
+.myBtn.dark {
+    background-color: #eceeca;
+    color: #A0583A;
+}
+
+.myBtn.dark:hover {
+    background-color: #d0d2ad;
+    color:#A0583A;
+}
+
 .myChkbox {
     display: inline-block;
     margin-bottom: 10px;
