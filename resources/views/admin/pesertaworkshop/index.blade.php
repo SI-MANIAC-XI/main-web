@@ -23,7 +23,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-header border-0">
-                    <h2 class="mb-0">Workshop Game Concept Design</h2>
+                    <h2 class="mb-0">Peserta Workshop</h2>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-hover table-striped align-items-center table-flush">
@@ -40,35 +40,6 @@
                                     <td>{{ $i+1 }}</td>
                                     <td>{{ $teamWorkshop1[$i]->name }}</td>
                                     <td>{{ $teamWorkshop1[$i]->team_name }}</td>
-                                </tr>
-                            @endfor
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-header border-0">
-                    <h2 class="mb-0">Workshop Game Asset Design</h2>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-hover table-striped align-items-center table-flush">
-                        <thead class="thead-light">
-                            <tr>
-                                <th>No</th>
-                                <th>Nama</th>
-                                <th>Nama Tim</th>
-                            </tr>
-                        </thead>
-                        <tbody class="list">
-                            @for ($i = 0; $i < count($teamWorkshop2); $i++)
-                                <tr>
-                                    <td>{{ $i+1 }}</td>
-                                    <td>{{ $teamWorkshop2[$i]->name }}</td>
-                                    <td>{{ $teamWorkshop2[$i]->team_name }}</td>
                                 </tr>
                             @endfor
                         </tbody>

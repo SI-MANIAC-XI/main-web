@@ -8,6 +8,23 @@
 }
 
 .workshop-container {
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+}
+
+.workshop-poster {
+    order: 1;
+}
+
+.workshop-regis {
+    order: 2;
+}
+
+@media (max-width: 768px) {
+    .workshop-poster {
+        order: 2;
+    }
+
+    .workshop-regis {
+        order: 1;
+    }
 }

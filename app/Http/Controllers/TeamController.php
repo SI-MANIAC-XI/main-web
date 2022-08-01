@@ -131,7 +131,7 @@ class TeamController extends Controller
    public function displayWorkshop(Account $account) {
       $team = Team::where('account_id',Auth::user()->id)->first();
       $teamDetail = $team->teamDetail;
-      $workshop = Workshop::get();
+      $workshop = DB::table('workshops')->get();
       
       $teamWorkshop1 = DB::table('team_has_workshop')
          ->join('team_details', 'team_has_workshop.team_detail_id', '=', 'team_details.id')
@@ -140,17 +140,9 @@ class TeamController extends Controller
          ->where('team_details.team_id', '=', $team->id)
          ->where('team_has_workshop.workshop_id', '=', 1)
          ->get();
-
-      $teamWorkshop2 = DB::table('team_has_workshop')
-         ->join('team_details', 'team_has_workshop.team_detail_id', '=', 'team_details.id')
-         ->join('teams', 'team_details.team_id', '=', 'teams.id')
-         ->select('team_details.*')
-         ->where('team_details.team_id', '=', $team->id)
-         ->where('team_has_workshop.workshop_id', '=', 2)
-         ->get();
          
       // dd($teamWorkshop1);
-      return view('teams.workshop', compact('team', 'workshop', 'teamWorkshop1', 'teamWorkshop2'));
+      return view('teams.workshop', compact('team', 'workshop', 'teamWorkshop1'));
       // dd($workshop);
    }
 
@@ -167,7 +159,7 @@ class TeamController extends Controller
          DB::table('team_has_workshop')->updateOrInsert(['team_detail_id'=>$request->get('peserta3'), 'workshop_id'=>$workshop_id]);
       }
 
-      session()->flash('success', 'Berhasil registrasi pada ' . $workshop->name);
+      session()->flash('success', 'Registrasi workshop berhasil');
       return redirect('/workshop');
    }
 }
