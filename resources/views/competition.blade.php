@@ -23,7 +23,7 @@
                 <div class="card-body">
                     <p>Topik yang akan dilombakan pada babak final adalah Game Concept Design dan Game Asset Design. <br><br>
                         Game Concept Design adalah cabang lomba untuk membuat sebuah konsep cerita atau alur dalam sebuah game. Peserta diharapkan dapat membuat konsep game yang dapat menjadi solusi dari kasus yang akan ditentukan nantinya. <br><br>
-                        Game Asset Desain adalah cabang lomba untuk mendesain asset-asset yang dibutuhkan dalam game tersebut. Peserta diharapkan dapat mendesain asset game semenarik mungkin sesuai dengan alur dan konsep yang telah dibuat. <br><br>
+                        Game Asset Desain adalah cabang lomba untuk mendesain asset-asset yang dibutuhkan dalam game tersebut. Peserta diharapkan dapat membuat konsep game yang menarik dan kreatif sesuai dengan tema yang ditentukan. <br><br>
                         Setiap tim akan mempresentasikan hasil kerjanya pada babak Final. Peserta harus bisa memberikan penjelasan mengenai konsep game beserta assetnya</p>
                 </div>
             </div>
@@ -34,7 +34,7 @@
 
         <h2 class="d-flex justify-content-center my-5 fs-1 mb-4 myTitle">GUIDE BOOK</h2>
         <div class="d-flex justify-content-center">
-            <a href="{{ asset('../mainweb/guidebook/guidebook.pdf') }}" target="_blank" class="btn btn-download fs-4 rounded-pill"><strong>DOWNLOAD</strong></a>
+            <a href="{{ asset('../mainweb/guidebook/guidebook_updated.pdf') }}" target="_blank" class="btn btn-download fs-4 rounded-pill"><strong>DOWNLOAD</strong></a>
         </div>
     </div>
 @endsection
