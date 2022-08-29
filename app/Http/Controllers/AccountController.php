@@ -41,6 +41,18 @@ class AccountController extends Controller
         return redirect('/login');
     }
 
+    public function registerPage() {
+        date_default_timezone_set("Asia/Jakarta");
+        $endDate = "1 September 2022";
+        $endDateTimestamp = strtotime($endDate);
+        if (time() >= $endDateTimestamp) {
+            session()->flash('registerClosed', 'Pendaftaran telah ditutup, sampai jumpa di MANIAC XII');
+            return redirect('/login');
+        } else {
+            return view('auth.register');
+        }
+    }
+
     /**
      * Show the form for creating a new resource.
      *

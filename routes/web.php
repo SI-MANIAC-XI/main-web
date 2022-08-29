@@ -40,9 +40,7 @@ Route::get('/login', function () {
 Route::post('/login', 'AccountController@authenticate');
 Route::post('/logout', 'AccountController@logout');
 
-Route::get('/register', function () {
-   return view('auth.register');
-});
+Route::get('/register', 'AccountController@registerPage');
 
 Route::post('/register', 'RegisterController@store');
 

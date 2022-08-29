@@ -20,7 +20,17 @@
             </div>
             <div class="row justify-content-center">
                 <div class="d-flex justify-content-center mt-4 hadiah text-center">WIN UP TO <br>IDR 100+ MILLION </div>
-                <a href="{{ url('/register') }}" class="btn custom-btn custom-btn-bg">REGISTER NOW</a>    
+                
+                @php
+                    date_default_timezone_set("Asia/Jakarta");
+                    $endDate = "1 September 2022";
+                    $endDateTimestamp = strtotime($endDate);  
+                @endphp
+                @if (time() < $endDateTimestamp)
+                    @if (!auth()->check())
+                    <a href="{{ url('/register') }}" class="btn custom-btn custom-btn-bg">REGISTER NOW</a> 
+                    @endif
+                @endif
             </div>
         </div>
     </div>

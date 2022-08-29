@@ -12,6 +12,15 @@ class RegisterController extends Controller
 {
    public function store(Request $request)
    {
+
+      date_default_timezone_set("Asia/Jakarta");
+      $endDate = "1 September 2022";
+      $endDateTimestamp = strtotime($endDate);
+      if (time() >= $endDateTimestamp) {
+          session()->flash('registerClosed', 'Pendaftaran telah ditutup, sampai jumpa di MANIAC XII');
+          return redirect('/login');
+      }
+
       $request->validate([
          'username' => ['required','max:45','unique:accounts'],
          'password' => ['required','min:6','max:45'],

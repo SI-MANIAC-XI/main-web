@@ -14,6 +14,12 @@
                            {{ session('loginError') }}
                         </div>
                      @endif
+                     @if(session()->has('registerClosed'))
+                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        {{ session()->get('registerClosed') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                     </div>
+                     @endif
                     <img src="{{ asset('../mainweb/img/logo/logo-maniac-xi.png') }}" width="90%" alt="Logo MANIAC XI">
                     
                     <form method="POST" action="{{ url('/login') }}" class="mt-5">
